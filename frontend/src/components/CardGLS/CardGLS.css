@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+.gls-box {
+    width: 60%;
+    display: flex;
+    background-color: rgba(27, 27, 27, 0.6); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.gls-image-container {
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px;
+}
+
+.gls-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.gls-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.gls-title {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gls-description {
+    margin: 15px 0;
+    font-size: 1em;
+    color: #cccccc;
+    line-height: 1.6;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gls-details {
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gls-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #020a7b; 
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    color: #24e7ee;
+    font-family: 'Orbitron', sans-serif;
+    /* text-transform: uppercase; */
+}
+
+.gls-button:hover {
+    background-color: #24e7ee; 
+    color: #020a7b;
+}

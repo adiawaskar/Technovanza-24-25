@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Landing from './pages/Landing/Landing';
+import GLS from './pages/GLS/GLS';
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
       <div id="target-cursor"></div>
         <Routes> 
           <Route path="/" element={<Landing />} />
-          
+          <Route path="/gls" element={<GLS />} />
         </Routes>
       </div>
     </Router>
