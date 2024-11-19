@@ -4,6 +4,7 @@ import './App.css'
 import Landing from './pages/Landing/Landing';
 import GLS from './pages/GLS/GLS';
 import Events from './pages/Events/Events';
+import Exhibition from './pages/Exhibition/Exhibition';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/gls" element={<GLS />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/exhibition" element={<Exhibition />} />
         </Routes>
       </div>
     </Router>
