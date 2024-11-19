@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap');
+
+
+/* Events.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-bg {
+  background-image: url('../../../public/images/holo-bg4.png');
+  /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  /* Align items to the top */
+  justify-content: center;
+  /* Horizontally center the container */
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 20px;
+  /* Align at the top of the screen */
+  width: 320px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  /* Horizontally center the raindrops */
+  align-items: center;
+}
+
+.light {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  filter: drop-shadow(8px 8px 0 #0005);
+}
+
+.drop {
+  position: absolute;
+  top: 0;
+  background: #83dfeb;
+  /* Raindrop color */
+  width: 2px;
+  height: 10px;
+  transform-origin: bottom;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  70% {
+    transform: translateY(470px) scaleY(1);
+  }
+
+  80% {
+    transform: translateY(470px) scaleY(0.2);
+  }
+
+  100% {
+    transform: translateY(470px) scaleY(0)
+      /*scaleX(15)*/
+    ;
+  }
+}
+
+/* Button css */
+.button-container {
+  display: flex;
+  /* Display buttons side by side */
+  justify-content: center;
+  /* Center the buttons horizontally */
+  gap: 20px;
+  /* Space between buttons */
+  position: absolute;
+  bottom: 10%;
+  /* Position the container near the bottom */
+  left: 50%;
+  /* Center horizontally on the screen */
+  transform: translateX(-50%);
+  /* Adjust to perfectly center */
+  z-index: 1;
+}
+
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  border-width: 1px 0px 1px 0;
+  border-style: solid;
+  border-image: linear-gradient(to left, transparent, rgba(224, 132, 0, 0.4), transparent);
+  border-image-slice: 1;
+  cursor: none;
+  display: inline-block;
+  /* Ensure button behaves like inline-block */
+  position: relative;
+  /* Ensures it's properly aligned inside the button container */
+}
+
+
+
+.text {
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6em;
+  color: rgba(255, 239, 199, 1);
+  text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
+  display: block;
+  margin-bottom: -4px;
+  margin-top: 1px;
+}
+
+.line-container {
+  width: 230px;
+  margin: auto;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+}
+
+.line--thick {
+  width: 10px;
+  background-color: rgba(255, 239, 199, 1);
+  /* background-color: rgba(148, 253, 250, 1); */
+}
+
+.line--thin {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(to left, rgba(255, 239, 199, 0.8), rgba(224, 132, 0, 0.4), rgba(224, 132, 0, 0.4), rgba(224, 132, 0, 0.4), rgba(255, 239, 199, 0.8));
+  /* // background: linear-gradient(to left, rgba(148, 253, 250, 0.8), rgba(2, 59, 113, 0.4), rgba(2, 59, 113, 0.4), rgba(2, 59, 113, 0.4), rgba(148, 253, 250, 0.8)); */
+}
+
+.thick-line--short {
+  height: 15px;
+  top: -16px;
+}
+
+.thick-line--long {
+  height: 40px;
+  top: -1px;
+}
+
+.line--top-right {
+  right: 0;
+  transform: skew(45deg);
+  box-shadow: 0px 0px 13px rgba(226, 97, 11, 0.85), -12px -8px 25px 3px rgba(226, 97, 11, 0.8);
+}
+
+.line--top-left {
+  left: 0px;
+  transform: skew(-45deg);
+  box-shadow: 12px -8px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+}
+
+.line--bottom-right {
+  right: 12px;
+  transform: skew(-45deg);
+  box-shadow: -12px 3px 22px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+}
+
+.line--bottom-left {
+  left: 12px;
+  transform: skew(45deg);
+  box-shadow: 12px 3px 22px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+}
+
+.line--top {
+  width: 214px;
+  top: -17px;
+  left: 8px;
+  box-shadow: 0px 5px 34px 5px rgba(251, 169, 40, 0.26);
+}
+
+.line--bottom {
+  width: 160px;
+  top: 38px;
+  left: 35px;
+  box-shadow: 0px -5px 34px 5px rgba(251, 169, 40, 0.26);
+}
+
+.pseudo-class-shadow {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 22px;
+}
+
+.events-navbar {
+  width: 340px;
+  /* height: auto; */
+  max-height: 460px;
+  position: fixed;
+  top: 15%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px;
+  /* Optional, to add some space from the top */
+  /* background-color: rgba(130, 240, 252, 0.332); */
+  /* box-shadow: 2px 0px 10px rgba(0, 255, 255, 0.5); */
+  background-image: url('../../../public/images/frame8-removebg-preview.png');
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  /* Optional, to round the corners */
+  align-items: center;
+  box-sizing: border-box;
+  opacity: 0.9;
+  overflow-y: auto;
+}
+
+/* Styling each event text */
+.event {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3em;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #700072,
+    0.025em 0.04em 0 #676502;
+  /* animation: glitch 725ms infinite; */
+  color: rgba(255, 255, 255, 0.669);
+  margin: 10px 0;
+}
+
+.event span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.419);
+  border: 1px solid rgba(8, 210, 236, 0.886);
+  box-shadow: 0px 0px 20px rgba(124, 229, 255, 0.8), inset 0px 0px 20px rgba(7, 196, 229, 0.653);
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: hologram-glow 10s infinite alternate;
+  transition: transform 1s ease, opacity 1s ease;
+  z-index: 10;
+  color: aliceblue;
+}
+
+.card-enter {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+}
+
+.card-enter-active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.card-exit {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.card-exit-active {
+  transform: translate(-50%, 100%);
+  opacity: 0;
+}
+
+
+.card-image {
+  /* width: calc(100% - 20px);
+  height: auto;
+  padding: 5px;
+  border-radius: 8px; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* opacity: 0;
+  transition: opacity 0.5s ease; */
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+  margin-top: 1px;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: aliceblue;
+  transition: transform 0.3s ease;
+  margin: 0;
+}
+
+.card:hover .card-title {
+  transform: translateY(-25px);
+}
+
+.card-content {
+  margin-top: -20px;
+  font-size: 1.2rem;
+  font-family: "Playfair Display";
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  /* transform: scale(1.05); */
+  /* Slightly increase the size of the card on hover */
+  background: rgba(0, 0, 0, 0.848);
+  /* Darken the background on hover */
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+
+.event-details-container {
+  position: fixed;
+  top: 15%;
+  right: 20px;
+  /* transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  /* Stack the event box and buttons vertically */
+  align-items: flex-start;
+  /* Align everything to the left */
+  gap: 20px;
+  /* Space between event details and buttons */
+  z-index: 10;
+}
+
+.event-details-box {
+  width: 350px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.685);
+  border: 1px solid rgba(8, 210, 236, 0.886);
+  box-shadow: 0px 0px 20px rgba(124, 229, 255, 0.8), inset 0px 0px 20px rgba(7, 196, 229, 0.653);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px;
+  animation: hologram-glow 10s infinite alternate;
+  /* overflow-y: auto; */
+  overflow: hidden;
+}
+
+/* Styling for Heading and Paragraph */
+.event-details-box h2 {
+  font-size: 3rem;
+  /* Increase size of the heading */
+  font-weight: bold;
+  color: #08d2ec;
+  margin-bottom: 15px;
+  /* Space between heading and paragraph */
+  text-shadow: 0px 0px 10px rgba(8, 210, 236, 0.8);
+  padding-top: 20px;
+}
+
+
+.event-details-box p {
+  font-family: 'Roboto Mono', 'Source Code Pro';
+  font-size: 1.2rem;
+  /* Standard size for paragraph */
+  /* line-height: 1; */
+  color: #cdeffb;
+  text-align: left;
+  overflow-y: auto;
+}
+
+/* Custom Blue Scrollbar Styles */
+.event-details-box p::-webkit-scrollbar {
+  width: 5px;
+  /* Width of the scrollbar */
+}
+
+.event-details-box p::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  /* Track color */
+  border-radius: 10px;
+  /* Rounded track */
+}
+
+.event-details-box p::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #08d2ec, #0076b6cf);
+  /* Gradient blue thumb */
+  border-radius: 10px;
+  /* Rounded scrollbar thumb */
+}
+
+.event-details-box p::-webkit-scrollbar-thumb:hover {
+  background: #00b4d8;
+  /* Lighter blue on hover */
+}
+
+.event-buttons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+/* Styling for the event buttons (Register and Brochure) */
+.register-btn,
+.brochure-btn {
+  flex: 1;
+  /* Allow each button to take up equal space */
+  display: inline-flex;
+  justify-content: center;
+  /* Center the text inside each button */
+  align-items: center;
+  /* Vertically center the text */
+  padding: 15px 0;
+  /* Add padding to top and bottom */
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: #1f1f1f;
+  /* Dark background to make neon glow stand out */
+  color: #f0f0f0;
+  /* Light text color */
+  font-weight: bold;
+  cursor: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+  /* Neon blue glow */
+}
+
+/* Hover effect for buttons */
+.register-btn:hover,
+.brochure-btn:hover {
+  background-color: #00c8c8;
+  /* Lighter cyan-blue background on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+  /* Stronger neon glow */
+}
+
+.register-btn:active,
+.brochure-btn:active {
+  background-color: #00a8a8;
+  /* Darker cyan-blue when clicked */
+  box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 1);
+  /* Strong neon effect on click */
+}

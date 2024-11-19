@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Landing from './pages/Landing/Landing';
 import GLS from './pages/GLS/GLS';
+import Events from './pages/Events/Events';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Routes> 
           <Route path="/" element={<Landing />} />
           <Route path="/gls" element={<GLS />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </div>
     </Router>
