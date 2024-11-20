@@ -1,0 +1,26 @@
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #0011497e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    background-color: rgba(0, 149, 255, 0.39);
+  }
+  
+  .person-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .person-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  

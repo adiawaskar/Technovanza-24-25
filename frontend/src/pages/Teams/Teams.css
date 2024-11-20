@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+.teams-page {
+    background-image: url("../../components//Assets/Teams/teams_bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .teams-heading {
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-shadow:
+    0 0 5px rgba(255, 248, 55, 0.8),
+    0 0 10px rgba(255, 67, 67, 0.6),
+    0 0 15px rgba(202, 68, 255, 0.6),
+    0 0 20px rgba(49, 203, 255, 0.5);
+    font-family: 'Orbitron';
+  }
+  
+  .person-container,
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Orbitron';
+  }
+  
+  .person-container {
+    gap: 20px; /* Adds spacing between person cards */
+  }
+  
+  .person-container .general-heading {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Orbitron';
+  }
+  
+  .team-container {
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 150px;
+  }
+  .team-container .team-name{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Orbitron';
+  }
+  
+  /* .team-name {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  } */
+  
+  .navigation-buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron';
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -5,6 +5,7 @@ import Landing from './pages/Landing/Landing';
 import GLS from './pages/GLS/GLS';
 import Events from './pages/Events/Events';
 import Exhibition from './pages/Exhibition/Exhibition';
+import Teams from './pages/Teams/Teams';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/gls" element={<GLS />} />
           <Route path="/events" element={<Events />} />
           <Route path="/exhibition" element={<Exhibition />} />
+          <Route path="/teams" element={<Teams />} />
         </Routes>
       </div>
     </Router>
