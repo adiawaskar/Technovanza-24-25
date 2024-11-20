@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+.gallery_page {
+    background-image: url('../../components/Assets/Gallery/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.gallery_page {
+    background-color: black;
+}
+
+.gallery_heading {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    /* text-shadow: 0 0 10px #00ffff; */
+    text-shadow:
+        0 0 5px rgba(255, 248, 55, 0.8),
+        0 0 10px rgba(255, 67, 67, 0.6),
+        0 0 15px rgba(202, 68, 255, 0.6),
+        0 0 20px rgba(49, 203, 255, 0.5);
+    transition: transform 1s ease;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.gallery_container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    columns: 3;
+    column-gap: 30px;
+    padding: 0 20px;
+}
+
+.gallery_box {
+    width: 100%;
+    margin-bottom: 25px;
+    break-inside: avoid;
+}
+
+.gallery_box img {
+    max-width: 100%;
+    border-radius: 25px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery_box img:hover {
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1200px) {
+    .gallery_container {
+        width: calc(100% - 40px);
+        columns: 2;
+    }
+}
+
+@media (max-width: 760px) {
+    .gallery_container {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery_container {
+        columns: 1;
+    }
+}

@@ -297,7 +297,7 @@
   
   .sponsors-heading {
     position: relative;
-    /* top: 16%; */
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
@@ -312,7 +312,7 @@
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     z-index: 7;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .sponsors-box {
     max-height: 80vh; 
