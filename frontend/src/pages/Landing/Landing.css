@@ -1,8 +1,9 @@
-body,
+/* body,
 html {
     cursor: none;
 }
 
+*/
 body {
     overflow-y: scroll;
     height: 100vh;
@@ -24,11 +25,11 @@ body {
 
 .logo-wrapper {
     position: absolute;
-    top: -190px;
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 450px;
-    height: 450px;
+    width: 450vw;
+        height: auto;
     background-image: url('../../../public/images/holder1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -71,16 +72,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .landing-btn1-container {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
+        align-items: center;
     gap: 12px;
-    position: absolute;
-    bottom: 20px;
     z-index: 1002;
 }
 
@@ -92,7 +91,8 @@ landing-btn {
     border: 2px solid #064f64;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(3, 191, 191, 0.3), inset 0 0 8px rgba(3, 191, 191, 0.4);
-    cursor: none;
+    /* cursor: none; */
+        cursor: pointer;
     transition: transform 0.2s, box-shadow 0.3s, color 0.3s;
     overflow: hidden;
     position: relative;
@@ -137,7 +137,8 @@ landing-btn::before {
     transform: translateY(-50%);
     transition: left 0.5s;
     z-index: 1;
-    cursor: none;
+    /* cursor: none; */
+        cursor: pointer;
 }
 
 landing-btn:hover::before {
@@ -232,6 +233,82 @@ landing-btn:hover::after {
     transform: scale(1.2);
 }
 
+.home-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 900;
+    display: flex;
+    flex-direction: row;
+    cursor: none;
+    gap: 20px;
+}
+
+.home-box:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.home-box.fade-in {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+.home-box.fade-out {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url('./techno.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 400px;
+    padding-top: 50px;
+}
+
+.home-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #a3f7ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60%;
+    animation: fadeInHeading 2s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+@keyframes fadeInHeading {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .content-box {
     position: absolute;
     top: 50%;
@@ -250,9 +327,9 @@ landing-btn:hover::after {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     overflow: hidden;
     z-index: 900;
-    display: flex;
-    flex-direction: row;
-    cursor: none;
+    /* display: flex;
+            flex-direction: row; */
+        cursor: pointer;
     gap: 20px;
 }
 
@@ -375,12 +452,19 @@ landing-btn:hover::after {
 
 .bottom-nav {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 50px;
+        padding: 15px;
+        position: fixed;
+        background-color: #0d0d0d90;
+        border-radius: 30%;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
     z-index: 1000;
-    position: relative;
-    margin-top: 150px;
+
 }
 
 .bottom-nav span {
@@ -401,8 +485,11 @@ landing-btn:hover::after {
     transform: scale(1.1);
 }
 
+.dropdown {
+    display: none;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .left-frame {
         display: none;
     }
@@ -411,6 +498,58 @@ landing-btn:hover::after {
         display: none;
     }
 
+        .home-heading {
+            margin-top: 320px;
+        }
+    
+    
+        .dropdown {
+            position: fixed;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1003;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+        }
+    
+        .dropdown button {
+            background-color: #0d0d0d;
+            color: #a3f7ff;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 2px solid #064f64;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+        }
+    
+        .dropdown button:hover {
+            background-color: #1f1f1f86;
+            color: #fff;
+        }
+    
+        .dropdown-menu {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
+            padding: 15px;
+            border: 2px solid #064f64;
+            border-radius: 8px;
+        }
+    
+        .dropdown-menu.show {
+            display: flex;
+        }
+    
+        .dropdown-menu button {
+            width: 100%;
+        }
     .landing-btn1-container {
         flex-direction: row;
         align-items: center;
@@ -426,11 +565,16 @@ landing-btn:hover::after {
     .content-box {
         width: 80%;
         max-width: 80%;
-        height: 50%;
+        height: auto;
         padding: 15px;
         gap: 15px;
         flex-direction: row;
         top: 50%;
         transform: translate(-50%, 0);
     }
+.bottom-nav span {
+    margin: 20px 0;
+    font-size: 20px;
+
+}
 }

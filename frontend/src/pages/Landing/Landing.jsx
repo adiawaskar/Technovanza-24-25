@@ -8,12 +8,18 @@ import { Link } from 'react-router-dom';
 
 const Landing = () => {
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+  };
+
   useEffect(() => {
     class BasicWorldDemo {
       constructor() {
-        this._Initialize();
         this.targetPosition = new THREE.Vector3(0, 0, 100);
         this.hoverOffset = new THREE.Vector3(0, 0, 0);
+        this._Initialize();
       }
 
       _Initialize() {
@@ -48,15 +54,43 @@ const Landing = () => {
         ]);
         this._scene.background = texture;
 
-     
+         this._AttachDropdownListeners(); //responsive content button event listener
+
         document.getElementById('back')?.addEventListener('click', () => this._SetView('back', 'about'));
         document.getElementById('left')?.addEventListener('click', () => this._SetView('left', 'highlights'));
         document.getElementById('front')?.addEventListener('click', () => this._SetView('front', 'theme'));
         document.getElementById('right')?.addEventListener('click', () => this._SetView('right', 'location'));
-        document.getElementById('up')?.addEventListener('click', () => this._SetView('up'));
+        document.getElementById('up')?.addEventListener('click', () => this._SetView('up', 'home'));
+
+       
+        this._SetView('up', 'home');
 
         this._RAF();
       }
+
+
+      _AttachDropdownListeners() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    if (dropdownMenu) {
+        dropdownMenu.querySelectorAll('.landing-btn').forEach((btn) => {
+            btn.addEventListener('click', (event) => {
+                const id = event.target.id; // Get button ID
+                this._HandleDropdownNavigation(id);
+                });
+            });
+        }
+    }
+
+    _HandleDropdownNavigation(id) {
+    switch (id) {
+        case 'up': this._SetView('up', 'home'); break;
+        case 'back': this._SetView('back', 'about'); break;
+        case 'left': this._SetView('left', 'highlights'); break;
+        case 'front': this._SetView('front', 'theme'); break;
+        case 'right': this._SetView('right', 'location'); break;
+        default: console.warn(`No navigation handler for dropdown ID: ${id}`);
+    }
+}
 
       _OnWindowResize() {
         this._camera.aspect = window.innerWidth / window.innerHeight;
@@ -65,6 +99,7 @@ const Landing = () => {
       }
 
       _OnMouseMove(event) {
+        if (!this.hoverOffset) this.hoverOffset = new THREE.Vector3(0, 0, 0);
         const mouseX = (event.clientX / window.innerWidth) - 0.5;
         const mouseY = (event.clientY / window.innerHeight) - 0.5;
         this.hoverOffset.set(mouseX * 15, mouseY * 15, 0);
@@ -91,6 +126,10 @@ const Landing = () => {
         stars.style.pointerEvents = 'auto';
 
         document.querySelectorAll('.content-box').forEach(box => {
+          box.classList.add('hidden', 'fade-out');
+          box.classList.remove('fade-in');
+        });
+        document.querySelectorAll('.home-box').forEach(box => {
           box.classList.add('hidden', 'fade-out');
           box.classList.remove('fade-in');
         });
@@ -178,24 +217,24 @@ const Landing = () => {
       </css-doodle>
 
 
-  <div className="landing-btn1-container">
-        <landing-btn id="up">Home</landing-btn>
-        <landing-btn id="back">About</landing-btn>
-        <landing-btn id="left">Highlights</landing-btn>
-        <landing-btn id="front">Theme</landing-btn>
-        <landing-btn id="right">Locate</landing-btn>
-    </div>
 
-
-
-<div className="left-frame">
     <div className="bottom-nav">   
         <Link to="/events"><span>Events</span></Link>
         <Link to="/exhibition"><span>Exhibition</span></Link>
         <Link to="/gls"><span>GLS</span></Link>
         <Link to="/gallery"><span>Gallery</span></Link>
         <Link to="/teams"><span>Teams</span></Link>
-</div>
+    </div>
+
+
+<div className="left-frame">
+    <div className="landing-btn1-container">
+        <landing-btn id="up">Home</landing-btn>
+        <landing-btn id="back">About</landing-btn>
+        <landing-btn id="left">Highlights</landing-btn>
+        <landing-btn id="front">Theme</landing-btn>
+        <landing-btn id="right">Locate</landing-btn>
+    </div>  
     
     <div className="social-icons">
         <a href="https://www.instagram.com/technovanza/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
@@ -207,9 +246,29 @@ const Landing = () => {
 </div>
 
 
+{/* Dropdown for small screens */}
+ <div className="dropdown">
+            <button onClick={toggleDropdown}>Contents</button>
+            <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+                <button id="up" className="landing-btn">Home</button>
+                <button id="back" className="landing-btn">About</button>
+                <button id="left" className="landing-btn">Highlights</button>
+                <button id="front" className="landing-btn">Theme</button>
+                <button id="right" className="landing-btn">Locate</button>
+            </div>
+  </div>
+
+
   <div className="right-frame">
         <CountdownTimer />
   </div>
+
+        <div id="home" className='home-box hidden'>
+          <div className="home-content">
+            <h2 className="home-heading">Technovanza</h2>
+          </div>
+        </div>
+
 
 
       <div id="about" className="content-box hidden">

@@ -1,13 +1,13 @@
 body,
 html {
-  cursor: none;
+  /* cursor: none; */
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden;
 }
 
-#target-cursor {
+/* #target-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -19,4 +19,4 @@ html {
   transition: transform 0.1s ease-out;
     z-index: 1500;
     will-change: transform;
-  }
+  */

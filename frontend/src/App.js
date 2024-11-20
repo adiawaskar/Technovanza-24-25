@@ -8,26 +8,26 @@ import Exhibition from './pages/Exhibition/Exhibition';
 
 function App() {
 
-   useEffect(() => {
-    //custom cursor 
-    const cursor = document.getElementById('target-cursor');
+  //  useEffect(() => {
+  //   //custom cursor 
+  //   const cursor = document.getElementById('target-cursor');
     
-    const handleMouseMove = (e) => {
-      cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
-      cursor.style.top = e.pageY - cursor.offsetHeight / 2 + 'px';
-    };
+  //   const handleMouseMove = (e) => {
+  //     cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
+  //     cursor.style.top = e.pageY - cursor.offsetHeight / 2 + 'px';
+  //   };
 
-    document.addEventListener('mousemove', handleMouseMove);
+  //   document.addEventListener('mousemove', handleMouseMove);
 
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('mousemove', handleMouseMove);
+  //   };
+  // }, []);
 
   return (
     <Router>
       <div className="App">
-      <div id="target-cursor"></div>
+     
         <Routes> 
           <Route path="/" element={<Landing />} />
           <Route path="/gls" element={<GLS />} />
@@ -40,3 +40,6 @@ function App() {
 }
 
 export default App;
+
+      // <div className="App">
+      // <div id="target-cursor"></div>
