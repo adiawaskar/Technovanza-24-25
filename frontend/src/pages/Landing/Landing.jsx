@@ -219,11 +219,11 @@ const Landing = () => {
 
 
     <div className="bottom-nav">   
-        <Link to="/events"><span>Events</span></Link>
-        <Link to="/exhibition"><span>Exhibition</span></Link>
-        <Link to="/gls"><span>GLS</span></Link>
-        <Link to="/gallery"><span>Gallery</span></Link>
-        <Link to="/teams"><span>Teams</span></Link>
+        <Link to="/events"><span>Events </span></Link>
+        <Link to="/exhibition"><span>Exhibition </span></Link>
+        <Link to="/gls"><span>GLS </span></Link>
+        <Link to="/gallery"><span>Gallery </span></Link>
+        <Link to="/teams"><span>Teams </span></Link>
     </div>
 
 
