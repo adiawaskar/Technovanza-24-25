@@ -319,7 +319,7 @@ const Landing = () => {
         <h2>Theme</h2>
         <div className="theme-container">
           <iframe
-            src="https://www.youtube.com/embed/PPmYb8rDxoY"
+            src="https://www.youtube.com/embed/AQAV2GdLIl0"
             title="YouTube video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

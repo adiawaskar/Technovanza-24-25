@@ -11,7 +11,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const updateTimer = () => {
-      const futureDate = new Date("December 20, 2024 20:00:00").getTime();
+      const futureDate = new Date("December 21, 2024 12:00:00").getTime();
       const now = new Date().getTime();
       const diff = futureDate - now;
 

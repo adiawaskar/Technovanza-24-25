@@ -1,37 +1,28 @@
 .team-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 40%;  /* Set fixed width for the card */
+    height: auto; /* Fixed height to make it square */
     border: 5px solid #0011497e;
-    border-radius: 8px;
+    border-radius: 17px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 50%;
-    height: 79%;
-    padding: 10px;
     background-color: rgba(0, 149, 255, 0.39);
+    overflow: hidden;
+    margin: 0 auto;  /* Center the card horizontally */
   }
   
-  .team-images {
+  .team-image-container {
+    width: 100%;  /* You can adjust this to fit your image size */
+    height: 100%;  /* Ensures the container is square */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Space between images */
-    flex-wrap: wrap; /* Ensures images stack if they exceed container width */
   }
-
+  
   .team-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fit the square image inside without distortion */
+    border-radius: 8px;
   }
-  
-  .team-name {
-    margin: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-  }
-  
