@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;  /* Set fixed width for the card */
+    width: 44%;  /* Set fixed width for the card */
     height: auto; /* Fixed height to make it square */
     border: 5px solid #0011497e;
     border-radius: 17px;
