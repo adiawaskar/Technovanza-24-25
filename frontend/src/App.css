@@ -1,23 +1,10 @@
-body,
-html {
-  /* cursor: none; */
-  /* margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-    */
+@font-face {
+  font-family: 'Gang Wolfik';
+  src: url('../public/fonts/gang_wolfik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* #target-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background-image: url('../public/images/cursor.png');
-  background-size: cover;
-  pointer-events: none;
-  transition: transform 0.1s ease-out;
-    z-index: 1500;
-    will-change: transform;
-  */
+body {
+  font-family: 'Gang Wolfik', sans-serif;
+}

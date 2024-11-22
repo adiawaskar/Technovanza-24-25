@@ -11,6 +11,14 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Gang Wolfik';
+    src: 
+         url('../../../public/fonts/gang_wolfik.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #cockpit-background {
     position: fixed;
     top: 0;
@@ -238,7 +246,7 @@ landing-btn:hover::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
+    /* font-weight: bold; */
     width: 60%;
     max-width: 600px;
     height: auto;
@@ -287,8 +295,8 @@ landing-btn:hover::after {
 }
 
 .home-heading {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 32px;
+    font-family: 'Gang Wolfik', sans-serif;
+    font-size:90px;
     color: #a3f7ff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -296,6 +304,7 @@ landing-btn:hover::after {
     animation: fadeInHeading 2s ease-in-out;
     position: relative;
     z-index: 10;
+    font-weight: normal;
 }
 
 @keyframes fadeInHeading {
