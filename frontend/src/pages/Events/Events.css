@@ -101,7 +101,7 @@
   border-style: solid;
   border-image: linear-gradient(to left, transparent, rgba(224, 132, 0, 0.4), transparent);
   border-image-slice: 1;
-  cursor: none;
+  cursor: pointer;
   display: inline-block;
   /* Ensure button behaves like inline-block */
   position: relative;
@@ -460,7 +460,7 @@
   color: #f0f0f0;
   /* Light text color */
   font-weight: bold;
-  cursor: none;
+  cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
   /* Neon blue glow */
