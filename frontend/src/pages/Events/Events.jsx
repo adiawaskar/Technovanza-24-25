@@ -22,6 +22,8 @@ const Events = () => {
 
   const [cardIndex, setCardIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState(null); // Track selected event
+
 
   useEffect(() => {
     function rain() {
@@ -50,6 +52,7 @@ const Events = () => {
 
   const handleEventClick = (index) => {
     setIsAnimating(true);
+    setSelectedEvent(index);
     setTimeout(() => {
       setCardIndex(index);
       setIsAnimating(false);
@@ -59,6 +62,7 @@ const Events = () => {
   const handleNextEvent = () => {
     setIsAnimating(true);
     setTimeout(() => {
+      setSelectedEvent((prev) => (prev + 1) % events.length);
       setCardIndex((prevIndex) => (prevIndex + 1) % events.length); 
       setIsAnimating(false);
     }, 700); 
@@ -67,6 +71,7 @@ const Events = () => {
   const handlePreviousEvent = () => {
     setIsAnimating(true);
     setTimeout(() => {
+      setSelectedEvent((prev) => (prev - 1 + events.length) % events.length);
       setCardIndex((prevIndex) => (prevIndex - 1 + events.length) % events.length); 
       setIsAnimating(false);
     }, 700); 
@@ -78,7 +83,7 @@ const Events = () => {
         {events.map((event, index) => (
           <p
             key={event.id}
-            className="event"
+            className={`event ${selectedEvent === index ? "highlighted" : ""}`}
             onClick={() => handleEventClick(index)}
           >
             <span aria-hidden="true">{event.title}</span>
@@ -87,6 +92,7 @@ const Events = () => {
           </p>
         ))}
       </div>
+
 
       <div className="container">
         <div className="light"></div>
