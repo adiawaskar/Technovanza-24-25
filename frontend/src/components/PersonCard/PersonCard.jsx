@@ -1,11 +1,10 @@
 import React from "react";
 import "./PersonCard.css";
 
-const PersonCard = ({ name, image }) => {
+const PersonCard = ({ image }) => {
   return (
     <div className="person-card">
-      <img src={image} alt={name} className="person-image" />
-      <p className="person-name">{name}</p>
+      <img src={image} alt="person" className="person-image" />
     </div>
   );
 };

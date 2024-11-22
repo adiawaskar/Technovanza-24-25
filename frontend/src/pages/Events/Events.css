@@ -10,7 +10,7 @@
 }
 
 .full-bg {
-  background-image: url('../../../public/images/holo-bg4.png');
+  background-image: url('../../../public/images/events_bg.png');
   /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
@@ -238,6 +238,26 @@
   /* animation: glitch 725ms infinite; */
   color: rgba(255, 255, 255, 0.669);
   margin: 10px 0;
+}
+
+.event:hover {
+  background-color: rgba(0, 255, 255, 0.2); /* Light cyan background on hover */
+  color: rgba(255, 255, 255, 1); /* Ensure text stays white on hover */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event.selected {
+  background-color: rgba(0, 255, 255, 0.4); /* Darker cyan for selected event */
+  color: rgba(255, 255, 255, 1); /* White text for selected */
+}
+
+.event.highlighted {
+  background-color: rgb(215, 0, 0);  /* Highlighted background color */
+  font-weight: bold;           /* Optional: Make the text bold */
+  /* padding: 5px; */
+  margin: 5px 0;              
+  border-radius: 5px;  
 }
 
 .event span {

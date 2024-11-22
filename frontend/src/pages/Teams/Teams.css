@@ -97,3 +97,23 @@
     background-color: #0056b3;
   }
   
+  .person-cards {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .card-with-name {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .person-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a6ffff;
+  } 
+   
