@@ -164,7 +164,68 @@ const GLS = () => {
             description: "A senior scientist at ISRO, B.N. Ramakrishna contributed to the development of satellite communication systems and space research, playing a pivotal role in ISRO's early missions and infrastructure.",
             imageUrl: require('../../components/LectureCard/bn_ramakrishna.jpg'),
         },
+        {
+            title: "A. Arun",
+            description: "Celebrated motivational speaker and leadership expert, A. Arun has delivered transformative corporate training sessions across the globe. Recognized with the 'Leadership Excellence Award,' he has inspired countless individuals to achieve their best.",
+            imageUrl: require('../../components/LectureCard/a_arun.jpg')
+        },
+        {
+          title: "Aman Dhattarwal",
+          description: "Aman Dhattarwal is a pioneer in online education, founder of 'Apni Kaksha,' and an influential YouTube educator. Known for making quality education accessible, he has received the 'Young Educator of the Year Award' for his contributions.",
+          imageUrl: require('../../components/LectureCard/aman_dhattarwal.jpg')
+        },
+        {
+          title: "Annu Kapoor",
+          description: "Veteran actor and television host, Annu Kapoor is a National Award-winning artist celebrated for his versatility in Indian cinema and television. His career spans decades of iconic performances that continue to inspire.",
+          imageUrl: require('../../components/LectureCard/annu_kapoor.jpg')
+        },
+        {
+          title: "Dilip Chhabria",
+          description: "Visionary automobile designer and founder of DC Design, Dilip Chhabria has transformed the Indian auto industry. Awarded the 'Lifetime Achievement Award in Automobile Design,' he is renowned for his revolutionary car concepts.",
+          imageUrl: require('../../components/LectureCard/dilip_chhabria.avif')
+        },
+        {
+          title: "Gary Kirsten",
+          description: "Former South African cricketer and coach of India’s 2011 ICC World Cup-winning team, Gary Kirsten is a global cricketing icon. He is honored with the 'Order of Ikhamanga' for his contributions to the sport.",
+          imageUrl: require('../../components/LectureCard/gary_kirsten.webp')
+        },
+        {
+          title: "Harpal Singh",
+          description: "Known as the 'Energy Chef of India,' Harpal Singh is a culinary innovator and TV personality. His creativity in Indian cuisine earned him the 'Culinary Excellence Award,' making him a household name in gastronomy.",
+          imageUrl: require('../../components/LectureCard/harpal_singh.jpg')
+        },
+        {
+          title: "Prithviraj Chauhan",
+          description: "Former Chief Minister of Maharashtra, Prithviraj Chauhan is a seasoned politician known for his administrative skills and reformist approach. A senior Congress leader, he has contributed significantly to policy-making and governance in India.",
+          imageUrl: require('../../components/LectureCard/prithviraj_chauhan.jpg')
+        },          
+        {
+          title: "R. Chidambaram",
+          description: "Renowned nuclear scientist and former Principal Scientific Adviser to the Government of India, R. Chidambaram is pivotal to India’s nuclear achievements. He is a recipient of the 'Padma Vibhushan' for his significant contributions.",
+          imageUrl: require('../../components/LectureCard/r_chidambaram.webp')
+        },
+        {
+          title: "S. Somnath",
+          description: "Chairman of ISRO and an eminent aerospace scientist, S. Somnath has played a key role in India's space missions, including Chandrayaan. His leadership and innovation earned him the 'ISRO Excellence Award.'",
+          imageUrl: require('../../components/LectureCard/s_somnath.jpg')
+        },
+        {
+          title: "Satish Dua",
+          description: "Lt. Gen. Satish Dua (Retd.) is a highly decorated Indian Army officer and recipient of the 'Ati Vishisht Seva Medal.' Known for his strategic expertise, he is a prominent voice on national security matters.",
+          imageUrl: require('../../components/LectureCard/satish_dua.jpg')
+        },
+        {
+        title: "Suresh Prabhu",
+          description: "Suresh Prabhu is a seasoned Indian politician, former Union Minister of Railways, and advocate of sustainable development. Recognized globally, he has represented India at multiple international forums.",
+          imageUrl: require('../../components/LectureCard/suresh_prabhu.avif')
+        },
+        {
+          title: "Vinod Dham",
+          description: "Known as the 'Father of the Pentium Chip,' Vinod Dham revolutionized computing with his innovations in microprocessors. A technology entrepreneur, he is a recipient of multiple global honors for his contributions to the tech industry.",
+          imageUrl: require('../../components/LectureCard/vinod_dham.jpg')
+        }
     ];
+    //a.arun, aman dhattarwal, annu kapoor, dilip chhabria, gary kirsten, harpal singh, prithviraj chauhan, r chidambaram, s somnath, satish dua, suresh prabhu, vinod dham
     
     
     const pastSponsors = [
