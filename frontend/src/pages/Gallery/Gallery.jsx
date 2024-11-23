@@ -41,6 +41,7 @@ import image37 from "../../components/Assets/Gallery/image37.png";
 import image38 from "../../components/Assets/Gallery/image38.png";
 import image39 from "../../components/Assets/Gallery/image39.png";
 import image40 from "../../components/Assets/Gallery/image40.png";
+import SecondaryNavbar from "../../components/SecondaryNavbar/SecondaryNavbar";
 
 const Gallery = () => {
   // Array of image imports
@@ -54,6 +55,7 @@ const Gallery = () => {
 
    return (
     <div className="gallery_page">
+      <SecondaryNavbar />
       <h1 className="gallery_heading">Gallery</h1>
       <div className="gallery_container">
         {images.map((src, index) => (

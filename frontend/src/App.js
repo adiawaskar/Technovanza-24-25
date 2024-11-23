@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css'
 import Landing from './pages/Landing/Landing';
 import GLS from './pages/GLS/GLS';
@@ -9,7 +9,6 @@ import Teams from './pages/Teams/Teams';
 import Gallery from './pages/Gallery/Gallery';
 
 function App() {
-
   //  useEffect(() => {
   //   //custom cursor 
   //   const cursor = document.getElementById('target-cursor');
@@ -29,7 +28,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-     
         <Routes> 
           <Route path="/" element={<Landing />} />
           <Route path="/gls" element={<GLS />} />

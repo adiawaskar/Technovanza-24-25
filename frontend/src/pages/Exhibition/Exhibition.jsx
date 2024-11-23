@@ -4,6 +4,7 @@ import leftDoorImage from '../../components/Assets/Exhibition/door-left2.jpeg';
 import rightDoorImage from '../../components/Assets/Exhibition/door-right2.jpeg';
 import leftBackgroundImage from '../../components/Assets/Exhibition/visitors.webp';
 import rightBackgroundImage from '../../components/Assets/Exhibition/exhibitors.jpeg';
+import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 
 const Exhibition2 = () => {
   const [isLeftDoorOpen, setLeftDoorOpen] = useState(false);
@@ -14,6 +15,7 @@ const Exhibition2 = () => {
 
   return (
     <div className="exhibition-container">
+      <SecondaryNavbar />
       <div className="exhibition-frame">
           <h1 className="exhibition-heading">EXHIBITION</h1>
       </div>

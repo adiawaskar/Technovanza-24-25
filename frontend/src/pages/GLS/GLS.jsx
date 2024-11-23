@@ -9,6 +9,7 @@ import sponsorsBG from './sponsorsBg4.jpg';
 import lecturersBg from './lecturersBg3.jpg';
 import hudImage from './hud1.png';
 import robot from './robot3 (1) (1).png';
+import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 // import PastSponsors from '../PastSponsors/PastSponsors';
 
 
@@ -201,6 +202,7 @@ const GLS = () => {
       ];
     return (
         <div className="gls-container">
+            <SecondaryNavbar />
             {/* Full-page Background */}
             <div className="full-page" style={{ backgroundImage: `url(${garageImage})` }}>
                 <h1 className="centered-text">Guest Lecture Series</h1>

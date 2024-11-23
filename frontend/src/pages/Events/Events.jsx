@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Events.css';
+import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 
 
 const Events = () => {
@@ -84,6 +85,7 @@ const Events = () => {
 
   return (
     <div className="full-bg">
+      <SecondaryNavbar />
       <div className="events-navbar">
         {events.map((event, index) => (
           <p

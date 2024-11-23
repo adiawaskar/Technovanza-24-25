@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Teams.css";
 import PersonCard from "../../components/PersonCard/PersonCard";
 import TeamCard from "../../components/TeamCard/TeamCard";
+import SecondaryNavbar from "../../components/SecondaryNavbar/SecondaryNavbar";
 
 const Teams = () => {
   const [currentDivIndex, setCurrentDivIndex] = useState(0);
@@ -105,6 +106,7 @@ const Teams = () => {
 
   return (
     <div className="teams-page">
+      <SecondaryNavbar />
       <h1 className="teams-heading">TEAMS</h1>
       {containers[currentDivIndex]}
       <div className="navigation-buttons">
