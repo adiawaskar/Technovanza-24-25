@@ -296,11 +296,11 @@ landing-btn:hover::after {
 
 .home-heading {
     font-family: 'Gang Wolfik', sans-serif;
-    font-size:90px;
+    font-size:73px;
     color: #a3f7ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 60%;
+    margin-top: 70%;
     animation: fadeInHeading 2s ease-in-out;
     position: relative;
     z-index: 10;

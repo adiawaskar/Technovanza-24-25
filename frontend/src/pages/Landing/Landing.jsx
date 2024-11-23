@@ -266,7 +266,8 @@ const Landing = () => {
 
         <div id="home" className='home-box hidden'>
           <div className="home-content">
-            <h2 className="home-heading">Technovanza</h2>
+            <h2 className="home-heading">Technovanza <br />2024-25</h2>
+            {/* <h3 className="home-heading">2024-25</h3> */}
           </div>
         </div>
 
