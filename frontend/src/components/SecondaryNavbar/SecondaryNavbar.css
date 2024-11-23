@@ -3,10 +3,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+        width: 80%;
     background: #00000078;
     color: white;
-    height: 60px; /* Adjust height as needed */
+    height: 60px;
+        /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,10 +33,14 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none; /* Ensures links don't have underlines */
-    margin: 0 10px; /* Add spacing between the links */
-    display: inline-block;
+    text-decoration: none;
+        /* Ensures links don't have underlines */
+        margin: 0 7px;
+        /* Add spacing between the links */
+        /* display: inline-block; */
     font-family: 'Orbitron';
+    white-space: nowrap;
+        /* Prevent text wrapping */
 }
 
 .secondary-nav-link:hover {
@@ -51,4 +56,76 @@
 
 .secondary-nav-list-item {
     margin: 0 10px;
+}
+
+.hamburger-container {
+    display: none;
+    /* Hidden by default on larger screens */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger-container {
+        display: block;
+        /* Show hamburger icon on smaller screens */
+    }
+
+    .secondary-navbar-container {
+        display: none;
+        /* Hide navbar by default on mobile */
+        position: fixed;
+        transform: translateX(-10%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        font-size: 10vw;
+
+        /* Offset for the hamburger icon */
+    }
+
+    .secondary-navbar-container.open {
+        display: flex;
+        /* Show navbar when the "open" class is added */
+    }
+
+    .secondary-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-nav-link {
+        color: white;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .secondary-nav-list-item {
+        margin: 0;
+    }
 }

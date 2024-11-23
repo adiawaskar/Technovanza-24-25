@@ -392,7 +392,7 @@
     }
 
     .centered-text {
-        top: 20vh;
+        top: 25vh;
         font-size: 12vw;
     }
 
@@ -407,4 +407,8 @@
         height: 60vh;
         overflow-y: scroll;
     }
+.sponsors-heading {
+    font-size: 12vw;
+    margin-bottom: 120px;
+}
 }

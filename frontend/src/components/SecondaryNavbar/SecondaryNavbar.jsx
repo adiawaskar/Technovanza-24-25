@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SecondaryNavbar.css';
 import {Link} from 'react-router-dom';
 
 const SecondaryNavbar = () => {
+   const [isOpen, setIsOpen] = useState(false);  // State to manage the navbar toggle
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);  // Toggle the navbar visibility
+  };
   return (
-    <div className="secondary-navbar-container">
+    <div>
+    <div className="hamburger-container" onClick={toggleNavbar}>
+        <div className="hamburger-icon">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+    </div>
+
+    <div className={`secondary-navbar-container ${isOpen ? 'open' : ''}`}>
       <ul className="secondary-nav-list">
         <li className="secondary-nav-list-item">
           <Link to="/" className="secondary-nav-link">Home</Link>
@@ -25,6 +39,7 @@ const SecondaryNavbar = () => {
           <Link to="/teams" className="secondary-nav-link">Teams</Link>
         </li>
       </ul>
+    </div>
     </div>
 
   );
