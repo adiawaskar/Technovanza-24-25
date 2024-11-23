@@ -23,6 +23,7 @@ const Events = () => {
   const [cardIndex, setCardIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null); // Track selected event
+  const [isDetailsVisible, setIsDetailsVisible] = useState(false);
 
 
   useEffect(() => {
@@ -77,6 +78,10 @@ const Events = () => {
     }, 700); 
   };
 
+     const toggleDetails = () => {
+    setIsDetailsVisible(!isDetailsVisible); // Toggle details visibility
+  };
+
   return (
     <div className="full-bg">
       <div className="events-navbar">
@@ -98,6 +103,7 @@ const Events = () => {
         <div className="light"></div>
       </div>
 
+
      <div className={`card ${isAnimating ? 'card-exit-active' : 'card-enter-active'}`}>
       {events[cardIndex].imageSrc && (
         <img
@@ -112,21 +118,24 @@ const Events = () => {
        </div>
     </div>
 
-      <div className="event-details-container">
-  <div className={`event-details-box ${isAnimating ? 'details-exit-active' : 'details-enter-active'}`}>
-    <h2>{events[cardIndex].title}</h2>
-    <p>{events[cardIndex].info}</p>
-  </div>
-  
-  <div className="event-buttons">
-    <div className="register-btn">
-      <span>Register</span>
-    </div>
-    <div className="brochure-btn">
-      <span>Brochure</span>
-    </div>
-  </div>
-</div>
+    <button className="see-more-btn" onClick={toggleDetails}>
+        {isDetailsVisible ? 'Close' : 'See More'}
+      </button>
+
+        <div className={`event-details-container ${isDetailsVisible ? 'visible' : ''}`}>
+        <div className={`event-details-box ${isAnimating ? 'details-exit-active' : 'details-enter-active'}`}>
+          <h2>{events[cardIndex].title}</h2>
+          <p>{events[cardIndex].info}</p>
+        </div>
+        <div className="event-buttons">
+          <div className="register-btn">
+            <span>Register</span>
+          </div>
+          <div className="brochure-btn">
+            <span>Brochure</span>
+          </div>
+        </div>
+      </div>
      
         <div className="button-container">
             <div className="button" onClick={handlePreviousEvent}>
