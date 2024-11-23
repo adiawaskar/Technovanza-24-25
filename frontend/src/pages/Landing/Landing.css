@@ -5,7 +5,7 @@ html {
 
 */
 body {
-    overflow-y: scroll;
+    overflow: hidden;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -356,6 +356,14 @@ landing-btn:hover::after {
     width: 50%;
     border-radius: 8px;
 }
+
+.about-container img {
+    width: 50%;  /* Adjust to control image size */
+    max-width: 600px;  /* Maximum width, can be adjusted */
+    height: auto;  /* Keeps the image's aspect ratio */
+    border-radius: 8px;  /* Similar to iframe styling */
+    object-fit: cover;  /* Ensures the image covers the container without stretching */
+  }
 
 .about-text,
 .highlights-text,
@@ -718,7 +726,7 @@ landing-btn:hover::after {
         flex-direction: column;
     }
 
-    .about-container iframe,
+    .about-container img,
     .highlights-container iframe,
     .theme-container iframe {
         width: 80%;

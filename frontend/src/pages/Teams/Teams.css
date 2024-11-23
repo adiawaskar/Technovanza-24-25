@@ -82,21 +82,61 @@
     gap: 20px;
   }
   
-  .nav-button {
+  :root {
+    --neon-cyan: rgba(0, 255, 255, 0.8); /* Neon cyan color */
+    --neon-glow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    --button-bg: #000747; /* Dark background color */
+  }
+  
+  .teams-button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007bff;
+    background-color: var(--button-bg); /* Dark background */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Orbitron';
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3); /* Subtle cyan glow */
   }
   
-  .nav-button:hover {
-    background-color: #0056b3;
+  .teams-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    z-index: -1;
   }
+  
+  .teams-button:hover::before {
+    transform: scale(1.1);
+  }
+  
+  .teams-button:hover {
+    box-shadow: var(--neon-glow); /* Neon cyan glow on hover */
+  }
+  
+  .teams-button {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Neon cyan text glow */
+  }
+  
+  @keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 50px rgba(0, 255, 255, 0.5);
+    }
+  }
+  
+  .teams-button:hover {
+    animation: neon-glow 1.5s infinite alternate;
+  }
+  
   
   .person-cards {
      display: flex;

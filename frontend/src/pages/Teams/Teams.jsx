@@ -110,8 +110,8 @@ const Teams = () => {
       <h1 className="teams-heading">TEAMS</h1>
       {containers[currentDivIndex]}
       <div className="navigation-buttons">
-        <button onClick={handlePrev} className="nav-button">Prev</button>
-        <button onClick={handleNext} className="nav-button">Next</button>
+        <button onClick={handlePrev} className="teams-button">Prev</button>
+        <button onClick={handleNext} className="teams-button">Next</button>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import 'css-doodle';
 import CountdownTimer from '../../components/Countdown/CountdownTimer';
 import { FaInstagram, FaLinkedin, FaYoutube, FaTwitter, FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import aboutImage from './about.jpg'
 
 const Landing = () => {
 
@@ -274,13 +275,18 @@ const Landing = () => {
       <div id="about" className="content-box hidden">
       <h2>About</h2>
          <div className="about-container">
-          <iframe
+         <img
+          src={require('./about.jpg')} // Update this path
+          alt="About"
+          className="about-image"
+        />
+          {/* <iframe
             src="https://www.youtube.com/embed/PPmYb8rDxoY"
             title="YouTube video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
           <div className="about-text">
              <p>  Technovanza, the premier technical initiative of the VJTI Social Group,
         stands as one of Asia's largest techno-managerial festivals, attracting

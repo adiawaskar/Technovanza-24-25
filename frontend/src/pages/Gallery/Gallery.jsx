@@ -56,7 +56,7 @@ const Gallery = () => {
    return (
     <div className="gallery_page">
       <SecondaryNavbar />
-      <h1 className="gallery_heading">Gallery</h1>
+      <h1 className="gallery_heading">GALLERY</h1>
       <div className="gallery_container">
         {images.map((src, index) => (
           <div className="gallery_box" key={index}>
