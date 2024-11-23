@@ -54,7 +54,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-size: 4.5rem;
+    font-size: 6vw;
     text-transform: uppercase;
     width: 100%;
     text-shadow:
@@ -69,7 +69,7 @@
 
 .rotating-circle {
     position: absolute;
-    width: 500px;
+    width: 40vw;
     top: 22.5%;
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@
     
     .robot {
     position: absolute;
-    width: 900px;
+    width: 60vw;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -121,7 +121,7 @@
     left: 50%;
     transform: translate(-50%, 0); 
     color: rgb(255, 255, 255);
-    font-size: 4.5rem; 
+    font-size: 5vw;
     text-transform: uppercase;
     text-shadow:
         0 0 5px rgba(255, 248, 55, 0.8),
@@ -216,7 +216,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-size: 4.5rem;
+    font-size: 6vw;
     text-transform: uppercase;
     width: 100%;
     text-shadow:
@@ -301,7 +301,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-size: 4.5rem;
+    font-size: 6vw;
     text-transform: uppercase;
     width: 100%;
     text-shadow:
@@ -330,3 +330,81 @@
     bottom: 10%;
     border-radius: 30px;
   }
+@media (max-height: 420px),
+(max-width: 800px) {
+
+    .robot img {
+        width: 150vw;
+    }
+
+    .rotating-circle {
+        width: 100vw;
+        top: 50vh;
+    }
+
+    .centered-text {
+        top: 30vh;
+        font-size: 18vw;
+    }
+
+
+    .gls-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        overflow-y: scroll;
+    }
+
+    .upcoming-gls-text {
+        font-size: 15vw;
+    }
+
+    .past-lectures-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .past-lecturers-text {
+        font-size: 12vw;
+    }
+
+    .sponsors-heading {
+        font-size: 12vw;
+        margin-bottom: 90px;
+    }
+
+
+
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .robot img {
+        width: 200vw;
+    }
+
+    .rotating-circle {
+        width: 120vw;
+        top: 35vh;
+    }
+
+    .centered-text {
+        top: 20vh;
+        font-size: 12vw;
+    }
+
+    .upcoming-gls-text {
+        font-size: 10vw;
+    }
+
+    .gls-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        overflow-y: scroll;
+    }
+}

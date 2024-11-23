@@ -26,7 +26,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'Orbitron', sans-serif;
     color: #00ffff;
     text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
@@ -182,4 +182,170 @@
     padding-top: 20px;
     line-height: 1.5;
     max-height: 60%;
+}
+/* 
+@media (max-height: 420px),
+(max-width: 1200px) {
+    .exhibition-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        height: auto;
+        gap: 20px;
+        padding: 20px 10px;
+        overflow-y: auto;
+    }
+
+    .exhibition-heading {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #48C8FF;
+        text-shadow: 0 0 10px #48C8FF;
+    }
+
+    .door-container {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 300px;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .background-content {
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        padding-top: 500px;
+        background-color: rgba(1, 11, 12, 0.9);
+        border-radius: 8px;
+        text-align: center;
+        color: #fbfefe;
+        text-shadow: 0 0 20px #48C8FF;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+
+    .background-content:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .door,
+    .door-text,
+    .door-button {
+        display: none;
+    }
+} */
+
+
+/* Normal site styles (existing) remain here */
+
+/* Responsive Styles for Phones */
+@media (max-height: 420px),
+(max-width: 800px) {
+
+    /* Adjust as needed for your phone breakpoint */
+    .exhibition-container {
+        /* background-color: #000; */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        /* Ensure full height */
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        /* Keep black background */
+        /* gap: 20px; */
+        /* Add spacing between sections */
+    }
+
+    .exhibition-frame {
+        width: 22vw;
+        height: 22vh;
+        /* Take full width */
+        text-align: center;
+        margin-bottom: 30%;
+        top: 10%;
+    }
+
+    .exhibition-heading {
+        font-size: 2vw;
+        /* Adjust heading size for smaller screens */
+        text-align: center;
+        color: #48C8FF;
+        text-shadow: 0 0 10px #48C8FF;
+        text-align: center;
+    }
+
+    .door-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        text-align: center;
+        /* Center text content */
+        width: 100%;
+        gap: 10px;
+        /* Add spacing between elements */
+    }
+
+    .background-content {
+        width: 90%;
+        /* Full width with margins */
+        max-width: 400px;
+        /* Limit the size */
+        /* padding: 20px; */
+        background-color: rgba(1, 11, 12, 0.9);
+        /* Slight transparency */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        color: #fbfefe;
+        text-shadow: 0 0 20px #48C8FF;
+        margin-bottom: 10px;
+        overflow-y: scroll;
+    }
+
+    .background-content h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2px;
+        color: #48C8FF;
+    }
+
+    .background-content p {
+        font-size: 0.6rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .exhibition-register-btn {
+        display: inline-block;
+        background-color: #48C8FF;
+        color: #000;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .exhibition-register-btn:hover {
+        background-color: #1e6fa0;
+    }
+
+    .door,
+    .door-text,
+    .door-button {
+        display: none;
+        /* Hide door animations and buttons on mobile */
+    }
+
+    .background {
+        width: 100vw;
+    }
 }

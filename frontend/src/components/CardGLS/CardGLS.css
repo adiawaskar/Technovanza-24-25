@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 .gls-box {
-    width: 60%;
+    width: 60vw;
     display: flex;
     background-color: rgba(27, 27, 27, 0.6); 
     border-radius: 12px; 
@@ -77,4 +77,29 @@
 .gls-button:hover {
     background-color: #24e7ee; 
     color: #020a7b;
+}
+
+@media (max-height: 420px),
+(max-width: 800px) {
+    .gls-box {
+        overflow-y: scroll;
+        width: 85vw;
+    }
+
+    .gls-image-container {
+        padding: 10px;
+    }
+
+    .gls-image {
+        width: 50vw;
+    }
+
+    .gls-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .gls-description {
+        font-size: 0.8em;
+    }
 }

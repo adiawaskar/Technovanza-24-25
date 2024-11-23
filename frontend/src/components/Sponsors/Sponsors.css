@@ -1,5 +1,5 @@
 .sponsors-section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
   }
   
   .sponsors-title {
@@ -43,4 +43,13 @@
     color: #fff;
     font-size: 1rem;
   }
-  
+@media (max-height: 420px),
+(max-width: 800px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor-logo {
+    width: 120vw;
+  }
+}
