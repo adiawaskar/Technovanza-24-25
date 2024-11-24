@@ -10,21 +10,21 @@ const Events = () => {
       title: 'Robo Wars', 
       content: 'Robots battle in an epic showdown', 
       imageSrc: require('../../components/Assets/Events/robowars.png'), 
-      info: 'Unleash your engineering prowess in an epic showdown of robots! In Robo Wars, participants will build and control their combat robots to battle in a specially designed arena. The objective is to disable or immobilize the opponent\'s robot within a time limit. Expect intense clashes, strategic maneuvers, and sparks flying as bots fight for supremacy. Last bot standing wins!' 
+      info: 'Step into the ultimate battleground where robots fight for supremacy in an electrifying combat arena. Contestants must design and control robust bots capable of withstanding brutal attacks while strategically overpowering opponents. It\'s a spectacle of engineering and grit that will leave the crowd on edge!' 
     },
     { 
       id: 2, 
       title: 'Robo Soccer', 
       content: 'Football, but with robots!', 
       imageSrc: require('../../components/Assets/Events/robosoccer.png'),
-      info: 'Robo Soccer is a thrilling event where teams of robots face off in a football match. Each team must build robots capable of dribbling, passing, and scoring goals in a soccer-themed arena. It’s a perfect blend of robotics and sports, demanding both technical expertise and strategic thinking. Who will score the most goals and claim the title of Robo Soccer champion?' 
+      info: 'Experience the excitement of football with a robotic twist! Participants create bots to dribble, defend, and score goals in a fast-paced match. Combining innovation with strategy, this event showcases teamwork and technical prowess on the robotic field.' 
     },
     { 
       id: 3, 
       title: 'Monster Arena', 
       content: 'Monster trucks meet robots in the ultimate arena battle!', 
       imageSrc: require('../../components/Assets/Events/monsterarena.png'),
-      info: 'Get ready for the Monster Arena, where robotics meets the thrill of monster truck battles. Participants must design and control robots that mimic the power and destruction of monster trucks. The arena is filled with obstacles, ramps, and explosive challenges as robots clash in an adrenaline-pumping contest to see who reigns supreme in the Monster Arena.' 
+      info: 'Witness the grandeur of massive, creatively engineered robots battling in challenges of strength, skill, and endurance. This larger-than-life event promises jaw-dropping moments and awe-inspiring feats of innovation.' 
     },
     // { 
     //   id: 4, 
@@ -35,17 +35,17 @@ const Events = () => {
     // },
     { 
       id: 4, 
-      title: 'F1 RC Racing', 
+      title: 'F1 Dirt GP', 
       content: 'Race remote-controlled cars at high speed!', 
       imageSrc: require('../../components/Assets/Events/f1.png'),
-      info: 'F1 RC Racing brings the thrill of Formula 1 racing to the world of remote-controlled cars. Participants will race custom-built RC cars on a challenging track, pushing their machines to the limit. It’s a test of speed, control, and precision, as racers aim to cross the finish line first. Will you dominate the track and claim the victory in F1 RC Racing?' 
+      info: 'High-speed thrills meet rugged terrain in this off-road robot racing event. Participants design bots capable of navigating sharp turns, bumps, and obstacles in a competitive race against time and rivals, promising adrenaline and excitement at every corner.' 
     },
     { 
       id: 5, 
       title: 'Robo Strike', 
       content: 'Battle bots in a strategic combat competition', 
       imageSrc: require('../../components/Assets/Events/robostrike.png'),
-      info: 'Robo Strike brings together engineering and combat as participants design robots that must battle in a tactical arena. The event focuses on strategy, precision, and durability. Bots must be able to withstand attacks while dealing damage to their opponents. The last robot standing wins the Robo Strike title.' 
+      info: 'Precision and accuracy take center stage as robots tackle dynamic targets in challenging scenarios. This event tests a bot’s ability to analyze, aim, and strike with unparalleled efficiency, offering an engaging blend of skill and creativity.' 
     },
     // { 
     //   id: 6, 
@@ -65,8 +65,8 @@ const Events = () => {
       id: 7, 
       title: 'VRC', 
       content: 'VJTI Robotics Competition: Design, build, and compete', 
-      imageSrc: require('../../components/Assets/Events/robosoccer.png'),
-      info: 'VJTI Robotics Competition (VRC) is an exciting and educational event where teams compete to design and build robots that can perform various tasks. The competition emphasizes teamwork, problem-solving, and innovation, as teams work together to create robots that can score points in various challenges. Who will build the most efficient and versatile robot?' 
+      imageSrc: require('../../components/Assets/Events/vrc.png'),
+      info: 'The flagship event of Technovanza 2024, this challenge immerses participants in a "Parallel Space" themed robotics competition. Teams solve futuristic problems in an interstellar arena, blending creativity, advanced technology, and strategic execution to claim victory.' 
     },
     // { 
     //   id: 8, 
@@ -95,7 +95,14 @@ const Events = () => {
       content: 'The art of speedcubing and solving the Rubik\'s Cube', 
       imageSrc: require('../../components/Assets/Events/promptbattle.png'),
       info: 'Cubing is an event for puzzle enthusiasts and speedcubing experts. Participants will race against the clock to solve the classic Rubik\'s Cube in the shortest time possible. Whether you\'re a beginner or an experienced cuber, this event offers exciting challenges and a chance to show off your puzzle-solving skills. Will you be the fastest cuber in the competition?' 
-    },    
+    },  
+    { 
+      id: 11, 
+      title: 'Robo Sumo', 
+      content: 'Bot battles in a sumo wrestling arena', 
+      // imageSrc: require('../../components/Assets/Events/robosumo.png'),
+      info: 'Robo Sumo is a thrilling robot battle event where competitors design robots to compete in a sumo wrestling-style match. The objective is to push the opponent’s robot out of the ring within a time limit. It’s a test of strength, strategy, and engineering prowess, as robots battle for dominance in the arena.' 
+    },  
     // { 
     //   id: 11, 
     //   title: 'Technodyssey', 
