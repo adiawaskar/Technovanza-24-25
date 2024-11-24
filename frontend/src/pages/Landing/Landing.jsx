@@ -11,6 +11,8 @@ const Landing = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  
+
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
   };
@@ -77,6 +79,7 @@ const Landing = () => {
             btn.addEventListener('click', (event) => {
                 const id = event.target.id; // Get button ID
                 this._HandleDropdownNavigation(id);
+                 setIsDropdownOpen(false);
                 });
             });
         }

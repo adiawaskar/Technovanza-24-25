@@ -13,8 +13,8 @@ body {
 
 @font-face {
     font-family: 'Gang Wolfik';
-    src: 
-         url('../../../public/fonts/gang_wolfik.ttf') format('truetype');
+    src:
+            url('../../../public/fonts/gang_wolfik.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +24,8 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
+        overflow: hidden;
     background: url('../../../public/images/deck.png') no-repeat center center;
     background-size: cover;
     z-index: 1000;
@@ -37,7 +38,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 450px;
-        height: 450px;
+    height: 450px;
     background-image: url('../../../public/images/holder1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -243,12 +244,12 @@ landing-btn:hover::after {
 
 .home-box {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* font-weight: bold; */
-    width: 60%;
-    max-width: 600px;
+    width: 40%;
+        max-width: 500px;
     height: auto;
     padding: 20px;
     border-radius: 12px;
@@ -296,11 +297,11 @@ landing-btn:hover::after {
 
 .home-heading {
     font-family: 'Gang Wolfik', sans-serif;
-    font-size:73px;
+    font-size: 73px;
     color: #a3f7ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 70%;
+    margin-top: 80%;
     animation: fadeInHeading 2s ease-in-out;
     position: relative;
     z-index: 10;
@@ -330,7 +331,7 @@ landing-btn:hover::after {
     width: 60%;
     max-width: 600px;
     height: auto;
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     opacity: 0;
@@ -358,12 +359,17 @@ landing-btn:hover::after {
 }
 
 .about-container img {
-    width: 50%;  /* Adjust to control image size */
-    max-width: 600px;  /* Maximum width, can be adjusted */
-    height: auto;  /* Keeps the image's aspect ratio */
-    border-radius: 8px;  /* Similar to iframe styling */
-    object-fit: cover;  /* Ensures the image covers the container without stretching */
-  }
+    width: 50%;
+        /* Adjust to control image size */
+        max-width: 600px;
+        /* Maximum width, can be adjusted */
+        height: auto;
+        /* Keeps the image's aspect ratio */
+        border-radius: 8px;
+        /* Similar to iframe styling */
+        object-fit: cover;
+        /* Ensures the image covers the container without stretching */
+    }
 
 .about-text,
 .highlights-text,
@@ -474,13 +480,13 @@ landing-btn:hover::after {
     align-items: center;
     gap: 50px;
     padding: 15px;
-        position: fixed;
+    position: fixed;
         background-color: #0d0d0d90;
         border-radius: 30%;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        width: auto;
+    width: 80vw;
     z-index: 1000;
 
 }
@@ -491,6 +497,7 @@ landing-btn:hover::after {
     font-family: 'Orbitron', sans-serif;
     transform-origin: center bottom;
     text-transform: uppercase;
+    text-decoration: none;
     color: #00f7ff;
     cursor: pointer;
     transition: color 0.3s, transform 0.2s;
@@ -502,9 +509,11 @@ landing-btn:hover::after {
     text-shadow: 0 0 20px #fffb92;
     transform: scale(1.1);
 }
+
 .dropdown {
     display: none;
 }
+
 /* 
 .left-frame,
 .right-frame {
@@ -609,17 +618,33 @@ landing-btn:hover::after {
 
     body {
         overflow: hidden;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
+        .logo-wrapper {
+            top: -125px;
+            width: 320px;
+            height: 300px;
+            align-items: center;
+        }
+    
+    
+        #technovanza-logo {
+            width: 220px;
+            height: 200px;
+        }
     #cockpit-background {
         padding: 0;
         position: fixed;
+        top: 0;
+            left: 0;
         width: 100%;
-
+        background-size: cover;
+            height: 100%;
+            overflow: hidden;
     }
 
     .left-frame {
@@ -631,7 +656,8 @@ landing-btn:hover::after {
     }
 
     .home-heading {
-        margin-top: 320px;
+        font-size: 8vw;
+            margin-top: 250px;
     }
 
     .landing-btn1-container {
@@ -647,9 +673,15 @@ landing-btn:hover::after {
     }
 
     .bottom-nav {
-        width: 80%;
-        gap: 10px;
+        max-width: 70vw;
+            gap: 12px;
+            bottom: 10%;
+        
+        }
 
+        .bottom-nav span {
+            font-size: 15px;
+            font-weight: light;
     }
 
     .dropdown {
@@ -706,7 +738,7 @@ landing-btn:hover::after {
 
         width: 90%;
         max-width: 100%;
-        height: fit-content;
+        height: 50%;
         padding: 15px;
         gap: 15px;
         display: flex;
@@ -716,7 +748,11 @@ landing-btn:hover::after {
         justify-content: flex-start;
         align-items: center;
         box-sizing: border-box;
-        overflow: hidden;
+        overflow-y: scroll;
+        }
+        
+        .home-box content {
+            width: 100%;
     }
 
     .about-container,
@@ -729,7 +765,7 @@ landing-btn:hover::after {
     .about-container img,
     .highlights-container iframe,
     .theme-container iframe {
-        width: 80%;
+        width: 60%;
         border-radius: 8px;
         display: block;
         margin: 0 auto;
