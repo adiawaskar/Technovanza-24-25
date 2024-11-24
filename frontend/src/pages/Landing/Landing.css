@@ -625,7 +625,7 @@ landing-btn:hover::after {
     }
 
                 .home-box {
-                    width: 90vw;
+                    width: 60vw;
                 }
         .logo-wrapper {
             top: -125px;
@@ -660,7 +660,7 @@ landing-btn:hover::after {
     }
 
     .home-heading {
-        font-size: 17vw;
+        font-size: 13vw;
             margin-top: 45vh;
     }
 
