@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
+body.gallery-active {
+    overflow: auto;
+    /* Enable scrolling */
+}
 .gallery_page {
     background-image: url('../../components/Assets/Gallery/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    width: 100%;
     min-height: 100vh;
     padding-top: 50px;
 }
@@ -15,7 +20,7 @@
 
 .gallery_heading {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 8vw;
     font-family: 'Orbitron', sans-serif;
     color: #ffffff;
     /* text-shadow: 0 0 10px #00ffff; */

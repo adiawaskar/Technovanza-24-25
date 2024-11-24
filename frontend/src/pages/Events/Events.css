@@ -3,12 +3,13 @@
 
 
 /* Events.css */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+*/
 .full-bg {
   background-image: url('../../../public/images/events_bg.png');
   /* Replace with your background image URL */
@@ -23,6 +24,7 @@
   justify-content: center;
   /* Horizontally center the container */
   position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -241,23 +243,37 @@
 }
 
 .event:hover {
-  background-color: rgba(0, 255, 255, 0.2); /* Light cyan background on hover */
-  color: rgba(255, 255, 255, 1); /* Ensure text stays white on hover */
+  background-color: rgba(0, 255, 255, 0.2);
+    /* Light cyan background on hover */
+    color: rgba(255, 255, 255, 1);
+    /* Ensure text stays white on hover */
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 .event.selected {
-  background-color: rgba(0, 255, 255, 0.4); /* Darker cyan for selected event */
-  color: rgba(255, 255, 255, 1); /* White text for selected */
+  background-color: rgba(0, 255, 255, 0.4);
+    /* Darker cyan for selected event */
+    color: rgba(255, 255, 255, 1);
+    /* White text for selected */
 }
 
 .event.highlighted {
-  background-color: rgb(215, 0, 0);  /* Highlighted background color */
-  font-weight: bold;           /* Optional: Make the text bold */
+  background-color: rgb(0, 0, 0);
+    text-shadow:
+      0 0 5px rgba(79, 247, 247, 0.8),
+      /* Neon blue glow */
+      0 0 10px rgba(0, 255, 255, 0.6),
+      0 0 20px rgba(0, 255, 255, 0.4),
+      0 0 40px rgba(0, 255, 255, 0.2),
+      0 0 80px rgba(0, 255, 255, 0.1);
+    /* Highlighted background color */
+    font-weight: bold;
+    /* Optional: Make the text bold */
   /* padding: 5px; */
-  margin: 5px 0;              
-  border-radius: 5px;  
+  margin: 15px 0;
+    border-radius: 5px;
 }
 
 .event span {
@@ -392,7 +408,7 @@
 .event-details-box {
   width: 350px;
   height: 450px;
-  background: rgba(0, 0, 0, 0.685);
+  background: rgba(0, 0, 0, 0.924);
   border: 1px solid rgba(8, 210, 236, 0.886);
   box-shadow: 0px 0px 20px rgba(124, 229, 255, 0.8), inset 0px 0px 20px rgba(7, 196, 229, 0.653);
   display: flex;
@@ -503,6 +519,7 @@
   box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 1);
   /* Strong neon effect on click */
 }
+
 .see-more-btn {
   display: none;
 }
@@ -510,6 +527,25 @@
 @media (max-height: 420px),
 (max-width: 1200px) {
 
+  @keyframes animate {
+      0% {
+        transform: translateY(0) scaleY(1);
+      }
+  
+      70% {
+        transform: translateY(60vh) scaleY(1);
+      }
+  
+      80% {
+        transform: translateY(60vh) scaleY(0.2);
+      }
+  
+      100% {
+        transform: translateY(60vh) scaleY(0)
+          /*scaleX(15)*/
+        ;
+      }
+    }
   /* Hide the events-navbar */
   .events-navbar {
     display: none;
@@ -519,6 +555,10 @@
     display: none;
   }
 
+                .event-details-box {
+                  width: 80vw;
+                  height: 50vh;
+                }
   .event-details-container.visible {
     display: flex;
     flex-direction: column;
@@ -526,18 +566,34 @@
     justify-content: center;
     position: fixed;
     top: 40%;
-      left: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     height: auto;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 0px 20px rgba(124, 229, 255, 0.8), inset 0px 0px 20px rgba(7, 196, 229, 0.653);
+    background: none;
+      /* box-shadow: 0px 0px 20px rgba(124, 229, 255, 0.8), inset 0px 0px 20px rgba(7, 196, 229, 0.653); */
     padding: 20px;
-    z-index: 1010;
+    z-index: 1000;
     animation: fadeIn 0.5s ease;
   }
 
+                .card {
+                  width: 300px;
+                  height: 300px;
+                }
+        
+                .card-title {
+                  font-size: 2rem;
+                }
+        
+                .line-container {
+                  width: 45vw;
+                }
+        
+                .text {
+                  font-size: 4.2vw;
+                }
   @keyframes fadeIn {
     from {
       opacity: 0;

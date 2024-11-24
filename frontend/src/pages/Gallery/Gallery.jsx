@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import "./Gallery.css";
 
 // Import all the images
@@ -44,6 +44,17 @@ import image40 from "../../components/Assets/Gallery/image40.png";
 import SecondaryNavbar from "../../components/SecondaryNavbar/SecondaryNavbar";
 
 const Gallery = () => {
+
+  useEffect(() => {
+        // Add class to body when the component mounts
+        document.body.classList.add('gallery-active');
+
+        // Remove the class when the component unmounts
+        return () => {
+            document.body.classList.remove('gallery-active');
+        };
+    }, []);
+
   // Array of image imports
   const images = [
     image5, image27, image20, image2, image3, image4, image25, image6,

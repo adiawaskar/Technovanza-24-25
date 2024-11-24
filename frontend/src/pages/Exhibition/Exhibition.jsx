@@ -32,7 +32,7 @@ const Exhibition2 = () => {
           <p>Embark on a journey of innovation and exploration at Technovanza's exhibition! Immerse yourself in a showcase of cutting-edge projects, revolutionary technologies, and ingenious ideas. Join us to witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from the brilliant minds behind the projects, and be a part of the excitement at Technovanza. Don't miss this opportunity to experience the forefront of technological advancement!</p>
             <div className="exhibition-button">
             <div className="exhibition-register-btn">
-            <span>Register</span>
+            <span>Coming Soon</span>
           </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Exhibition2 = () => {
           <p>Calling all innovators and creators! Showcase your groundbreaking projects and ideas at Technovanza's exhibition. This is your chance to spotlight your technological marvels, share your passion for innovation, and connect with a diverse audience of tech enthusiasts. Whether you're a student, a startup, or an established tech wizard, this is the platform to exhibit your prowess. Set up your project, demonstrate its potential, and leave a lasting impression on the vibrant tech community.</p>
           <div className="exhibition-button">
             <div className="exhibition-register-btn">
-            <span>Register</span>
+            <span>Coming Soon</span>
           </div>
           </div>
         </div>

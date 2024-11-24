@@ -18,29 +18,29 @@ const GLS = () => {
         {
             title: "Upcoming GLS Event 1",
             description: "Prepare for an unforgettable event where industry leaders and innovators come together to share their insights and expertise. This session promises to ignite your curiosity, expand your knowledge, and inspire you to take on new challenges. Join us as we embark on a journey into the latest advancements and future possibilities!",
-            imageUrl: require("../../components/CardGLS/space1.jpg"), // Replace with actual image URL
+            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), // Replace with actual image URL
             buttonText: "Register",
-            date: "12th January 2024",
-            time: "9:30 AM",
-            venue: "VJTI Quad"
+            date: "Soon to be announced",
+            time: "Soon to be announced",
+            venue: "Soon to be announced"
         },
         {
             title: "Upcoming GLS Event 2",
             description: "Don’t miss out on this unique opportunity to hear from a visionary speaker as they share groundbreaking ideas and strategies that are reshaping the world. With a wealth of experience and a passion for innovation, our guest will provide valuable insights and guidance that can elevate your perspective and fuel your ambitions.",
-            imageUrl: require("../../components/CardGLS/space1.jpg"), // Replace with actual image URL
+            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), // Replace with actual image URL
             buttonText: "Register",
-            date: "15th February 2024",
-            time: "11:00 AM",
-            venue: "VJTI Auditorium"
+             date: "Soon to be announced",
+            time: "Soon to be announced",
+            venue: "Soon to be announced"
         },
         {
             title: "Upcoming GLS Event 3",
             description: "Step into the world of innovation and discovery as we welcome a prominent figure in technology and science. This session is designed to inspire and empower you with real-world knowledge and experiences that can help you make a difference. Get ready to be captivated by stories of success, resilience, and breakthrough achievements!",
-            imageUrl: require("../../components/CardGLS/space1.jpg"), 
+            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), 
             buttonText: "Register",
-            date: "20th March 2024",
-            time: "2:00 PM",
-            venue: "VJTI Conference Hall"
+             date: "Soon to be announced",
+            time: "Soon to be announced",
+            venue: "Soon to be announced"
         },
     ];
     const pastLectures = [
@@ -329,9 +329,9 @@ const GLS = () => {
             <div className="sponsors-container" style={{ backgroundImage: `url(${sponsorsBG})` }}>
         <h1 className="sponsors-heading">Sponsors</h1>
         <div className="sponsors-box">
-          <Sponsors sponsors={pastSponsors} title="Past Sponsors" />
+          {/*<Sponsors sponsors={pastSponsors} title="Past Sponsors" />
           <Sponsors sponsors={mediaSponsors} title="Media Partners" />
-          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" />
+          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" />*/}
         </div>
       </div>
         </div>

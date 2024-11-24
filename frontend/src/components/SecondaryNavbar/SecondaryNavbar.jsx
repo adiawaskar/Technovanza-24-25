@@ -19,6 +19,11 @@ const SecondaryNavbar = () => {
     </div>
 
     <div className={`secondary-navbar-container ${isOpen ? 'open' : ''}`}>
+
+     <button className="cross-button" onClick={toggleNavbar}>
+          ✖
+        </button>
+        
       <ul className="secondary-nav-list">
         <li className="secondary-nav-list-item">
           <Link to="/" className="secondary-nav-link">Home</Link>
