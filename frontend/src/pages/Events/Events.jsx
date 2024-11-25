@@ -220,8 +220,8 @@ const Events = () => {
         />
       )}
        <div className="card-overlay">
-          <h2 className="card-title">{events[cardIndex].title}</h2>
-          <p className="card-content">{events[cardIndex].content}</p>
+          {/* <h2 className="card-title">{events[cardIndex].title}</h2> */}
+          {/* <p className="card-content">{events[cardIndex].content}</p> */}
        </div>
     </div>
 
