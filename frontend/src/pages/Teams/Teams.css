@@ -180,3 +180,33 @@
         0 0 80px rgba(0, 255, 255, 0.1);
   } 
    
+/* Adjusting for smaller screens */
+@media (max-width: 768px) {
+  .teams-heading {
+    font-size: 3rem;
+    /* Adjust font size for smaller screens */
+    text-shadow: 0 0 3px rgba(255, 248, 55, 0.8),
+      0 0 6px rgba(255, 67, 67, 0.6),
+      0 0 10px rgba(202, 68, 255, 0.6),
+      0 0 15px rgba(49, 203, 255, 0.5);
+    /* Adjust shadow size */
+  }
+
+  .person-container .general-heading {
+    font-size: 2rem;
+    /* Adjust heading size */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8),
+      0 0 10px rgba(0, 255, 255, 0.6),
+      0 0 15px rgba(0, 255, 255, 0.4),
+      0 0 20px rgba(0, 255, 255, 0.2);
+  }
+
+  .person-name {
+    font-size: 1.5rem;
+    /* Adjust name size */
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.8),
+      0 0 6px rgba(0, 255, 255, 0.6),
+      0 0 10px rgba(0, 255, 255, 0.4),
+      0 0 20px rgba(0, 255, 255, 0.2);
+  }
+}

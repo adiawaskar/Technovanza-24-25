@@ -11,13 +11,7 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Gang Wolfik';
-    src:
-        url('../../../public/fonts/gang_wolfik.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 #cockpit-background {
     position: fixed;
@@ -52,7 +46,7 @@ body {
 #technovanza-logo {
     width: 300px;
     height: 300px;
-    background-image: url('../../../public/images/technovanza.png');
+    background-image: url('../../../public/images/dates.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -249,7 +243,7 @@ landing-btn:hover::after {
     transform: translate(-50%, -50%);
     /* font-weight: bold; */
     width: 40%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     padding: 20px;
     border-radius: 12px;
@@ -283,7 +277,7 @@ landing-btn:hover::after {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    height: 70%;
     width: 100%;
     text-align: center;
     background-image: url('./techno.png');
@@ -291,13 +285,13 @@ landing-btn:hover::after {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 400px;
+    min-height: 300px;
     padding-top: 50px;
 }
 
-.home-heading {
+/* .home-heading {
     font-family: 'Gang Wolfik', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: #a3f7ff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -308,6 +302,23 @@ landing-btn:hover::after {
     font-weight: normal;
 }
 
+*/ .home-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    background-image: url('./gangwolfik.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 350px;
+    margin-top: 85%;
+    animation: fadeInHeading 2s ease-in-out;
+    z-index: 10;
+}
 @keyframes fadeInHeading {
     0% {
         opacity: 0;
@@ -336,7 +347,7 @@ landing-btn:hover::after {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    overflow: hidden;
+    overflow-y: auto;
     z-index: 900;
     /* display: flex;
             flex-direction: row; */
@@ -349,6 +360,7 @@ landing-btn:hover::after {
 .theme-container {
     display: flex;
     gap: 20px;
+    overflow-y: auto;
 }
 
 .about-container iframe,
@@ -356,12 +368,13 @@ landing-btn:hover::after {
 .theme-container iframe {
     width: 50%;
     border-radius: 8px;
+    overflow-y: auto;
 }
 
 .about-container img {
     width: 50%;
     /* Adjust to control image size */
-        max-width: 600px;
+    max-width: 600px;
         /* Maximum width, can be adjusted */
         height: auto;
         /* Keeps the image's aspect ratio */
@@ -482,7 +495,7 @@ landing-btn:hover::after {
     padding: 15px;
     position: fixed;
     background-color: #0d0d0d90;
-        border-radius: 30%;
+    border-radius: 30%;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
@@ -514,130 +527,43 @@ landing-btn:hover::after {
     display: none;
 }
 
-/* 
-.left-frame,
-.right-frame {
-    display: block;
-} */
-
-/* ipad air, ipad pro, surface pro, nest hub, asus zenbook  */
-/* @media (max-height: 820px) or (max-width: 1200px) {
-    .left-frame {
-        display: none;
-    }
-
-    .right-frame {
-        display: none;
-    }
-
-        .home-heading {
-            margin-top: 320px;
-        }
-    
-    
-        .dropdown {
-            position: fixed;
-            top: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1003;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Orbitron', sans-serif;
-        }
-    
-        .dropdown button {
-            background-color: #0d0d0d;
-            color: #a3f7ff;
-            padding: 10px 20px;
-            font-size: 14px;
-            border: 2px solid #064f64;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-transform: uppercase;
-        }
-    
-        .dropdown button:hover {
-            background-color: #1f1f1f86;
-            color: #fff;
-        }
-    
-        .dropdown-menu {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 10px;
-            background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
-            padding: 15px;
-            border: 2px solid #064f64;
-            border-radius: 8px;
-        }
-    
-        .dropdown-menu.show {
-            display: flex;
-        }
-    
-        .dropdown-menu button {
-            width: 100%;
-        }
-
-    .landing-btn1-container {
-        flex-direction: row;
-        align-items: center;
-        bottom: 10px;
-        gap: 5px;
-    }
-
-    landing-btn {
-        padding: 10px 20px;
-        font-size: 11px;
-    }
-
-    .content-box {
-        width: 80%;
-        max-width: 80%;
-        height: fit-content;
-        padding: 15px;
-        gap: 15px;
-        flex-direction: row;
-        top: 50%;
-        transform: translate(-50%, 0);
-    }
-
-        .bottom-nav span {
-            margin: 20px 0;
-            font-size: 20px;
-
-
-    
-}
-}
-*/ @media (max-height: 420px) or (max-width: 920px) {
-
+@media (max-height: 420px) or (max-width: 920px) {
     body {
         overflow: hidden;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         margin: 0;
         padding: 0;
     }
 
-                .home-box {
-                    width: 60vw;
-                }
+        .about-container,
+        .highlights-container,
+        .theme-container {
+            display: flex;
+            flex-direction: column;
+        overflow-y: auto;
+            overflow-x: hidden;
+            height: calc(100vh - 50px);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        .home-box {
+            width: 70vw;
+            gap: 10px;
+    }
+
         .logo-wrapper {
             top: -125px;
             width: 320px;
             height: 300px;
             align-items: center;
         }
-    
-    
         #technovanza-logo {
             width: 220px;
-            height: 200px;
+        height: 200;
+            /* Maintains aspect ratio */
         }
 
     #cockpit-background {
@@ -646,53 +572,67 @@ landing-btn:hover::after {
         top: 0;
         left: 0;
         width: 100%;
-        background-size: cover;
         height: 100%;
-            overflow: hidden;
+        background-size: cover;
+        overflow: hidden;
     }
 
-    .left-frame {
-        display: none;
-    }
-
+        .left-frame,
     .right-frame {
         display: none;
     }
 
     .home-heading {
-        font-size: 13vw;
-            margin-top: 45vh;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 100%;
+            text-align: center;
+            background-image: url('./gangwolfik.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 250px;
+            /* Reduced for smaller screens */
+            margin-top: 80%;
+            /* Adjusted for better alignment */
+            animation: fadeInHeading 2s ease-in-out;
+            z-index: 10;
     }
 
     .landing-btn1-container {
         flex-direction: row;
         align-items: center;
-        bottom: 10px;
+        bottom: 5%;
         gap: 5px;
     }
 
-    landing-btn {
-        padding: 10px 20px;
+        .landing-btn {
+            padding: 8px 16px;
         font-size: 11px;
     }
 
     .bottom-nav {
-        background-color: none;
-        max-width: 70vw;
-        gap: 12px;
-            bottom: 10%;
-        
+        max-width: 90vw;
+            gap: 8px;
+            bottom: 5%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 10px;
         }
 
-
         .bottom-nav span {
-            font-size: 15px;
-            font-weight: light;
+        font-size: 13px;
+            font-weight: 300;
     }
 
     .dropdown {
         position: fixed;
-        top: 15%;
+        top: 12%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1003;
@@ -705,10 +645,11 @@ landing-btn:hover::after {
     .dropdown button {
         background-color: #0d0d0d;
         color: #a3f7ff;
-        padding: 10px 20px;
-        font-size: 14px;
+        padding: 8px 16px;
+            font-size: 12px;
+            font-family: 'Orbitron', sans-serif;
         border: 2px solid #064f64;
-        border-radius: 8px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background-color 0.3s;
         text-transform: uppercase;
@@ -734,54 +675,46 @@ landing-btn:hover::after {
         display: flex;
     }
 
-    .dropdown-menu button {
-        width: 100%;
-    }
-
-    .content-box {
-        padding: 0;
-        margin: 0;
-
+        .content-box {
         width: 90%;
         max-width: 100%;
         height: 50%;
-        padding: 15px;
-        gap: 15px;
+        padding: 10px;
+            gap: 10px;
         display: flex;
         flex-direction: column;
-        top: 50%;
-        transform: translate(-50%, 0);
         justify-content: flex-start;
         align-items: center;
         box-sizing: border-box;
-        overflow-y: scroll;
-    .home-box content {
-            width: 100%;
+        overflow-y: auto;
+            /* Allow autoing if content overflows */
     }
 
-    .about-container,
-    .highlights-container,
-    .theme-container {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     .about-container img,
     .highlights-container iframe,
     .theme-container iframe {
-        width: 60%;
+        width: 90%;
+            max-width: 500px;
+            /* Restricts size on large tablets */
         border-radius: 8px;
         display: block;
         margin: 0 auto;
+        overflow-y: scroll;
 
     }
 
     .about-text,
     .highlights-text,
     .theme-text {
-        width: 100%;
-        display: flex;
+        width: 90%;
         font-family: 'Roboto', sans-serif;
+        text-align: center;
+            /* Better readability on small screens */
+            line-height: 1.4;
+            /* Improve text spacing */
+            overflow-y: auto;
     }
-}
+
 }

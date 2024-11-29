@@ -66,6 +66,15 @@ body.gallery-active {
 
 
 @media (max-width: 1200px) {
+.gallery_heading {
+        font-size: 10vw;
+        /* Adjust size for medium screens */
+        text-shadow:
+            0 0 5px rgba(255, 248, 55, 0.8),
+            0 0 10px rgba(255, 67, 67, 0.6),
+            0 0 15px rgba(202, 68, 255, 0.6),
+            0 0 20px rgba(49, 203, 255, 0.5);
+    }
     .gallery_container {
         width: calc(100% - 40px);
         columns: 2;
@@ -73,12 +82,30 @@ body.gallery-active {
 }
 
 @media (max-width: 760px) {
+    .gallery_heading {
+    
+            text-shadow:
+                0 0 3px rgba(255, 248, 55, 0.8),
+                0 0 6px rgba(255, 67, 67, 0.6),
+                0 0 9px rgba(202, 68, 255, 0.6),
+                0 0 12px rgba(49, 203, 255, 0.5);
+            /* Make shadow less intense for small screens */
+        }
     .gallery_container {
         columns: 2;
     }
 }
 
 @media (max-width: 480px) {
+    .gallery_heading {
+    
+            text-shadow:
+                0 0 3px rgba(255, 248, 55, 0.8),
+                0 0 6px rgba(255, 67, 67, 0.6),
+                0 0 9px rgba(202, 68, 255, 0.6),
+                0 0 12px rgba(49, 203, 255, 0.5);
+            /* Make shadow less intense for small screens */
+        }
     .gallery_container {
         columns: 1;
     }
