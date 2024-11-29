@@ -425,6 +425,7 @@
 
 /* Styling for Heading and Paragraph */
 .event-details-box h2 {
+  font-family: 'Orbitron';
   font-size: 3rem;
   /* Increase size of the heading */
   font-weight: bold;
@@ -437,7 +438,7 @@
 
 
 .event-details-box p {
-  font-family: 'Roboto Mono', 'Source Code Pro';
+  font-family: 'Orbitron', 'Roboto Mono', 'Source Code Pro';
   font-size: 1.2rem;
   /* Standard size for paragraph */
   /* line-height: 1; */
