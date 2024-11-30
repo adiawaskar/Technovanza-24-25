@@ -87,7 +87,7 @@
   gap: 20px;
   /* Space between buttons */
   position: absolute;
-  bottom: 10%;
+  bottom: 15vh;
   /* Position the container near the bottom */
   left: 50%;
   /* Center horizontally on the screen */
@@ -610,7 +610,7 @@
   .see-more-btn {
     display: block;
     position: fixed;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1010;

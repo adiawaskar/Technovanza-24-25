@@ -28,8 +28,8 @@ const Exhibition2 = () => {
           className="background"
         />
         <div className="background-content">
-          <h2>Welcome Visitors</h2>
-          <p>Embark on a journey of innovation and exploration at Technovanza's exhibition! Immerse yourself in a showcase of cutting-edge projects, revolutionary technologies, and ingenious ideas. Join us to witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from the brilliant minds behind the projects, and be a part of the excitement at Technovanza. Don't miss this opportunity to experience the forefront of technological advancement!</p>
+          <h2>Visitors</h2>
+          <p>Embark on a journey of innovation and exploration at Technovanza's exhibition! Immerse yourself in cutting-edge projects, revolutionary technologies, and ingenious ideas. Witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from brilliant minds behind the projects and be part of the excitement at Technovanza. Don't miss this opportunity to experience the forefront of technological advancement!</p>
             <div className="exhibition-button">
             <div className="exhibition-register-btn">
             <span>Coming Soon</span>
@@ -58,7 +58,7 @@ const Exhibition2 = () => {
           className="background"
         />
         <div className="background-content">
-          <h2>Welcome Exhibitors</h2>
+          <h2>Exhibitors</h2>
           <p>Calling all innovators and creators! Showcase your groundbreaking projects and ideas at Technovanza's exhibition. This is your chance to spotlight your technological marvels, share your passion for innovation, and connect with a diverse audience of tech enthusiasts. Whether you're a student, a startup, or an established tech wizard, this is the platform to exhibit your prowess. Set up your project, demonstrate its potential, and leave a lasting impression on the vibrant tech community.</p>
           <div className="exhibition-button">
             <div className="exhibition-register-btn">

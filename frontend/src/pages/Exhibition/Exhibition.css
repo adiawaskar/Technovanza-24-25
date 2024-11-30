@@ -185,6 +185,7 @@
     max-height: 60%;
     margin-top: 0.1%;
 }
+
 /* 
 @media (max-height: 420px),
 (max-width: 1200px) {
@@ -252,24 +253,22 @@
     /* Adjust as needed for your phone breakpoint */
     .exhibition-container {
         /* background-color: #000; */
-        background-attachment: fixed;
-        background-size: cover;
+        /* background-attachment: fixed; */
+            /* background-size: cover; */
         background-position: center;
-        min-height: 100vh;
+        max-height: 100vh;
         /* Ensure full height */
-        overflow-y: scroll;
-        display: flex;
-        flex-direction: column;
+        overflow-y: auto;
+            /* display: flex; */
+            display: block;
+            /* flex-direction: column; */
         align-items: center;
-        /* padding: 20px 30px; */
-        /* Keep black background */
-        /* gap: 20px; */
-        /* Add spacing between sections */
     }
 
     .exhibition-frame {
-        width: 25vw;
-            height: 25vh;
+        position: absolute;
+            width: 50vw;
+            height: 50vh;
         /* Take full width */
         text-align: center;
         margin-bottom: 30%;
@@ -277,31 +276,46 @@
     }
 
     .exhibition-heading {
-        font-size: 2vw;
+        font-size: 6vw;
         /* Adjust heading size for smaller screens */
         text-align: center;
         color: #48C8FF;
         text-shadow: 0 0 10px #48C8FF;
         text-align: center;
-        padding-top: 3.5vh;
+        padding-top: 6vh;
     }
 
     .door-container {
+        width: 100%;
+            /* Full width */
+            height: 100vh;
         display: flex;
         flex-direction: column;
         /* Stack content vertically */
+        justify-content: center;
         align-items: center;
         text-align: center;
         /* Center text content */
-        width: 100%;
         gap: 10px;
         /* Add spacing between elements */
+        overflow-y: scroll;
+        }
+        
+        .background {
+            width: 100%;
+            height: 100%;
+            /* Cover entire section */
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+            /* Place background behind content */
     }
 
     .background-content {
-        width: 90%;
+        width: 95%;
         /* Full width with margins */
-        max-width: 400px;
+        max-width: 600px;
+            height: 70%;
         /* Limit the size */
         /* padding: 20px; */
         background-color: rgba(1, 11, 12, 0.9);
@@ -310,20 +324,22 @@
         box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
         color: #fbfefe;
         text-shadow: 0 0 20px #48C8FF;
-        margin-bottom: 10px;
-        overflow-y: scroll;
+        margin-bottom: 1vh;
+            /* overflow-y: scroll; */
     }
 
     .background-content h2 {
-        font-size: 1.1rem;
+        font-size: 2.1rem;
         margin-bottom: 2px;
         color: #48C8FF;
     }
 
     .background-content p {
-        font-size: 0.6rem;
+        /* font-size: 1.05rem; */
+            font-size: 1.9vh;
         line-height: 1.5;
-        margin-bottom: 20px;
+        padding-bottom: 1.5vh;
+            /* margin-bottom: 20px; */
     }
 
     .exhibition-register-btn {
@@ -335,6 +351,7 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        bottom: 10%;
     }
 
     .exhibition-register-btn:hover {
@@ -352,6 +369,7 @@
         width: 100vw;
     }
 }
+
 @media (min-width: 1024px) and (max-width: 1280px) and (min-height: 600px) and (max-height: 800px) and (orientation: landscape) {
     .exhibition-container {
         display: flex;
@@ -388,7 +406,7 @@
         top: 75%;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: 'Orbitron', sans-serif;
         color: #ffffff;
         z-index: 4;
@@ -427,7 +445,7 @@
     .background-content {
         position: absolute;
         width: 80%;
-        height: 60%;
+        height: 55vh;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -452,18 +470,18 @@
         /* Enables vertical scrolling */
     }
 
-    /* .exhibition-frame {
-        width: 27vw;
-        height: 22vh;
-        top: 5vh;
-    } */
+                                .exhibition-frame {
+                                    width: 40vw;
+                                    height: 40vh;
+                                    top: 15vh;
+                                }
 
     .exhibition-heading {
         position: absolute;
-        top: 45%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2.2vw;
+        font-size: 3.5vh;
         font-family: 'Orbitron', sans-serif;
         color: #00ffff;
         text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;

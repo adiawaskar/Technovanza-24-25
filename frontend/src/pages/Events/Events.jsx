@@ -59,7 +59,7 @@ const Events = () => {
       title: 'Bit By Bit', 
       content: 'Build robots that can navigate water!', 
       imageSrc: require('../../components/Assets/Events/bitbybit.png'),
-      info: 'Aqua Bot challenges participants to create robots capable of navigating water obstacles. These robots will have to be designed with water resistance and propulsion in mind. The competition consists of a series of tests where bots must complete tasks on water, from racing to obstacle avoidance. It’s an exciting challenge for aspiring marine robotics engineers.' 
+      // info: 'Aqua Bot challenges participants to create robots capable of navigating water obstacles. These robots will have to be designed with water resistance and propulsion in mind. The competition consists of a series of tests where bots must complete tasks on water, from racing to obstacle avoidance. It’s an exciting challenge for aspiring marine robotics engineers.' 
     },
     { 
       id: 7, 
@@ -80,7 +80,7 @@ const Events = () => {
       title: 'Code Relay', 
       content: 'Bot battles in a sumo wrestling arena', 
       imageSrc: require('../../components/Assets/Events/coderelay.png'),
-      info: 'Robo Sumo is a thrilling robot battle event where competitors design robots to compete in a sumo wrestling-style match. The objective is to push the opponent’s robot out of the ring within a time limit. It’s a test of strength, strategy, and engineering prowess, as robots battle for dominance in the arena.' 
+      // info: 'Robo Sumo is a thrilling robot battle event where competitors design robots to compete in a sumo wrestling-style match. The objective is to push the opponent’s robot out of the ring within a time limit. It’s a test of strength, strategy, and engineering prowess, as robots battle for dominance in the arena.' 
     },
     { 
       id: 9, 
@@ -94,13 +94,13 @@ const Events = () => {
       title: 'Prompt Battle', 
       content: 'The art of speedcubing and solving the Rubik\'s Cube', 
       imageSrc: require('../../components/Assets/Events/promptbattle.png'),
-      info: 'Cubing is an event for puzzle enthusiasts and speedcubing experts. Participants will race against the clock to solve the classic Rubik\'s Cube in the shortest time possible. Whether you\'re a beginner or an experienced cuber, this event offers exciting challenges and a chance to show off your puzzle-solving skills. Will you be the fastest cuber in the competition?' 
+      // info: 'Cubing is an event for puzzle enthusiasts and speedcubing experts. Participants will race against the clock to solve the classic Rubik\'s Cube in the shortest time possible. Whether you\'re a beginner or an experienced cuber, this event offers exciting challenges and a chance to show off your puzzle-solving skills. Will you be the fastest cuber in the competition?' 
     },  
     { 
       id: 11, 
       title: 'Robo Sumo', 
       content: 'Bot battles in a sumo wrestling arena', 
-      // imageSrc: require('../../components/Assets/Events/robosumo.png'),
+      imageSrc: require('../../components/Assets/Events/robosumo.png'),
       info: 'Robo Sumo is a thrilling robot battle event where competitors design robots to compete in a sumo wrestling-style match. The objective is to push the opponent’s robot out of the ring within a time limit. It’s a test of strength, strategy, and engineering prowess, as robots battle for dominance in the arena.' 
     },  
     // { 
