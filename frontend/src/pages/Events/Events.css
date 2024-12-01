@@ -212,20 +212,19 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 40px;
-  /* background-color: rgba(130, 240, 252, 0.332); */
-  /* box-shadow: 2px 0px 10px rgba(0, 255, 255, 0.5); */
-  /* background-image: url('../../../public/images/frame8-removebg-preview.png'); */
     background-image: url('../../../public/images/frame.png');
   background-size: cover;
-  /* Ensures the image covers the entire div */
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
-  /* Optional, to round the corners */
   align-items: center;
   box-sizing: border-box;
   opacity: 0.8;
   overflow-y: auto;
+}
+.events-navbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 /* Styling each event text */
