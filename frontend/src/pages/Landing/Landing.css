@@ -1,9 +1,5 @@
-/* body,
-html {
-    cursor: none;
-}
-
-*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 body {
     overflow: hidden;
     height: 100vh;
@@ -385,12 +381,25 @@ landing-btn:hover::after {
         /* Ensures the image covers the container without stretching */
     }
 
-.about-text,
+/* .about-text,
 .highlights-text,
 .theme-text {
     width: 50%;
     display: flex;
     font-family: 'Roboto', sans-serif;
+} */
+.about-text,
+.highlights-text,
+.theme-text {
+    width: 50%;
+    display: flex;
+    font-family: 'Saira Stencil One', sans-serif;
+        font-size: 1.5rem;
+        /* Adjust the size as needed */
+        line-height: 1.6;
+        /* Improve readability */
+        /* text-transform: uppercase; */
+        /* Optional: gives a futuristic look */
 }
 
 .content-box:hover {
@@ -445,6 +454,7 @@ landing-btn:hover::after {
 .highlights-text p,
 .theme-text p {
     font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #e0e0e0;
     text-align: center;

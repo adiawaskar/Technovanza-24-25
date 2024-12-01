@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css'
 import Landing from './pages/Landing/Landing';
@@ -7,27 +7,22 @@ import Events from './pages/Events/Events';
 import Exhibition from './pages/Exhibition/Exhibition';
 import Teams from './pages/Teams/Teams';
 import Gallery from './pages/Gallery/Gallery';
+import Preloader from './pages/Preloader/Preloader';
 
 function App() {
-  //  useEffect(() => {
-  //   //custom cursor 
-  //   const cursor = document.getElementById('target-cursor');
-    
-  //   const handleMouseMove = (e) => {
-  //     cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
-  //     cursor.style.top = e.pageY - cursor.offsetHeight / 2 + 'px';
-  //   };
 
-  //   document.addEventListener('mousemove', handleMouseMove);
+  const [showPreloader, setShowPreloader] = useState(true);
 
-  //   return () => {
-  //     document.removeEventListener('mousemove', handleMouseMove);
-  //   };
-  // }, []);
+  const handlePreloaderComplete = () => {
+    setShowPreloader(false); 
+  };
+
 
   return (
     <Router>
       <div className="App">
+       {showPreloader && <Preloader onComplete={handlePreloaderComplete} />}
+       
         <Routes> 
           <Route path="/" element={<Landing />} />
           <Route path="/gls" element={<GLS />} />
@@ -42,6 +37,3 @@ function App() {
 }
 
 export default App;
-
-      // <div className="App">
-      // <div id="target-cursor"></div>

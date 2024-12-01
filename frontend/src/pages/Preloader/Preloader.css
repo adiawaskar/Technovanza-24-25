@@ -1,0 +1,42 @@
+/* Preloader container */
+.preloader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* Fullscreen overlay with a black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 1s ease;
+    /* Ensures it overlays all other content */
+}
+
+/* Video styling */
+.preloader-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video fills the screen properly */
+    opacity: 0.9;
+    /* Optional: Slight transparency for blending effect */
+}
+
+/* Optional animation for fading out */
+.preloader-overlay.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
