@@ -12,15 +12,24 @@ const Teams = () => {
       <p className="general-heading">Secretaries</p>
       <div className="person-cards">
         <div className="card-with-name">
-            <PersonCard image={require("../../components/Assets/Teams/pavanpatil.jpg")} />
+            <PersonCard image={require("../../components/Assets/Teams/pavanpatil.jpg")}
+            instagram="https://www.instagram.com/paavan_patil"
+            linkedin="https://www.linkedin.com/in/paavan-patil-01496323b"
+            email="patilpaavan7286@gmail.com" />
           <p className="person-name">Paavan Patil</p>
         </div>
         <div className="card-with-name">
-            <PersonCard image={require("../../components/Assets/Teams/anamkhanzada.jpg")} />
+            <PersonCard image={require("../../components/Assets/Teams/anamkhanzada.jpg")}
+             instagram="https://www.instagram.com/anam_khanzada_"
+            linkedin="https://www.linkedin.com/in/anam-khanzada-095429305"
+            email="anam.khanzada26@gmail.com" />
             <p className="person-name">Anam Khanzada</p>
         </div>
         <div className="card-with-name">
-            <PersonCard image={require("../../components/Assets/Teams/nayaneshgudla.jpg")} />
+            <PersonCard image={require("../../components/Assets/Teams/nayaneshgudla.jpg")} 
+            instagram="https://www.instagram.com/g_nayanesh"
+            linkedin="https://www.linkedin.com/in/nayanesh-gudla"
+            email="nayaneshgudla1408@gmail.com" />
           <p className="person-name">Nayanesh Gudla</p>
         </div>
       </div>
@@ -29,11 +38,17 @@ const Teams = () => {
       <p className="general-heading">Web Developers</p>
       <div className="person-cards">
         <div className="card-with-name">
-            <PersonCard image={require("../../components/Assets/Teams/ritikanankar.jpg")} />
+            <PersonCard image={require("../../components/Assets/Teams/ritikanankar.jpg")}
+            instagram="https://www.instagram.com/ritikanankar____"
+            linkedin="https://www.linkedin.com/in/ritikanankar"
+            email="nankarritika12@gmail.com" />
             <p className="person-name">Ritika Nankar</p>
         </div>
         <div className="card-with-name">
-          <PersonCard image={require("../../components/Assets/Teams/adiawaskar.jpg")} />
+          <PersonCard image={require("../../components/Assets/Teams/adiawaskar.jpg")}
+           instagram="https://www.instagram.com/heyyitsadiiii"
+            linkedin="https://www.linkedin.com/in/adiawaskar"
+            email="adiawaskar04@gmail.com" />
           <p className="person-name">Adi Awaskar</p>
         </div>
       </div>

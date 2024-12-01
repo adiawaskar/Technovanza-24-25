@@ -634,7 +634,7 @@ landing-btn:hover::after {
 
     .dropdown {
         position: fixed;
-        top: 12%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1003;
@@ -666,16 +666,22 @@ landing-btn:hover::after {
         display: none;
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
+            margin-bottom: 10px;
         background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
         padding: 15px;
         border: 2px solid #064f64;
         border-radius: 8px;
+        position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%)
     }
 
     .dropdown-menu.show {
         display: flex;
     }
+
 
         .content-box {
         width: 90%;

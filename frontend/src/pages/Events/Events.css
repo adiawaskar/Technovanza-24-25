@@ -202,20 +202,20 @@
 }
 
 .events-navbar {
-  width: 340px;
+  width: 460px;
   /* height: auto; */
-  max-height: 460px;
+  max-height: 500px;
   position: fixed;
   top: 15%;
-  left: 20px;
+  left: 35px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 50px;
-  /* Optional, to add some space from the top */
+  padding: 40px;
   /* background-color: rgba(130, 240, 252, 0.332); */
   /* box-shadow: 2px 0px 10px rgba(0, 255, 255, 0.5); */
-  background-image: url('../../../public/images/frame8-removebg-preview.png');
+  /* background-image: url('../../../public/images/frame8-removebg-preview.png'); */
+    background-image: url('../../../public/images/frame.png');
   background-size: cover;
   /* Ensures the image covers the entire div */
   background-position: center;
@@ -224,14 +224,14 @@
   /* Optional, to round the corners */
   align-items: center;
   box-sizing: border-box;
-  opacity: 0.9;
+  opacity: 0.8;
   overflow-y: auto;
 }
 
 /* Styling each event text */
 .event {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   /* font-weight: bold; */
   text-transform: uppercase;
   position: relative;

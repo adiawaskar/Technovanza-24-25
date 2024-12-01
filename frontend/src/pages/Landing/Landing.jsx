@@ -182,9 +182,11 @@ const Landing = () => {
 
   return (
     <div>
-      <div className="logo-wrapper">
-        <div id="technovanza-logo"></div>
-      </div>
+     <div className="logo-wrapper">
+  <a href="https://vjti.ac.in" target="_blank" rel="noopener noreferrer">
+    <div id="technovanza-logo"></div>
+  </a>
+</div>
 
       
 
@@ -266,14 +268,19 @@ const Landing = () => {
   <div className="right-frame">
         <CountdownTimer />
   </div>
+<a 
+  href="https://www.instagram.com/technovanza/?hl=en" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  id="home-link"
+>
+  <div id="home" className="home-box hidden">
+    <div className="home-content">
+      <div className="home-heading"></div>
+    </div>
+  </div>
+</a>
 
-        <div id="home" className='home-box hidden'>
-          <div className="home-content">
-            <div className = "home-heading"> </div>
-             {/* <h2 className="home-heading">Technovanza <br />2024-25</h2>
-           <h3 className="home-heading">2024-25</h3> */}
-          </div>
-        </div>
 
 
 
