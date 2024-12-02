@@ -23,6 +23,7 @@ const Preloader = ({ onComplete }) => {
           autoPlay
           muted
           loop
+          playsInline
           className="preloader-video"
         />
       </div>
