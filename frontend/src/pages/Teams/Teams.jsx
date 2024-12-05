@@ -197,7 +197,7 @@ const Teams = () => {
         <p className="person-name">Amrut Gotpagar</p>
     </div>
     <div className="card-with-name">
-      <PersonCard image={require("../../components/Assets/Teams/shwetakare.jpg")}
+      <PersonCard image={require("../../components/Assets/Teams/shwetakare.webp")}
         instagram = "https://www.instagram.com/__shweta_kare__/"           
         linkedin = "https://www.linkedin.com/in/shweta-kare-097a86310/"
         email = "shwetakare29@gmail.com "
@@ -207,14 +207,14 @@ const Teams = () => {
   </div>
 </div>,
 <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/operationsbots.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/operationsbots.png.webp")} teamName="Team Alpha" />
     </div>,
     
     <div className="person-container" key="person-container">
     <p className="general-heading">Operations-Coding</p>
     <div className="person-cards">
       <div className="card-with-name">
-          <PersonCard image={require("../../components/Assets/Teams/harshalamahajan.jpg")}
+          <PersonCard image={require("../../components/Assets/Teams/harshalamahajan.webp")}
           instagram="https://www.instagram.com/m.harshala_99/?hl=en"
           linkedin="https://www.linkedin.com/in/harshalam334"
           email="mharshala334@gmail.com"
@@ -222,7 +222,7 @@ const Teams = () => {
           <p className="person-name">Harshala Mahajan</p>
       </div>
       <div className="card-with-name">
-        <PersonCard image={require("../../components/Assets/Teams/nishitkekane.jpg")}
+        <PersonCard image={require("../../components/Assets/Teams/nishitkekane.webp")}
           instagram="https://www.instagram.com/only_nishit/"
           linkedin="https://www.linkedin.com/in/nishit-kekane-b02b7324b/"
           email="nishit.kekane04@gmail.com"
@@ -232,7 +232,7 @@ const Teams = () => {
     </div>
   </div>,
   <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/operationscoding.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/operationscoding.png.webp")} teamName="Team Alpha" />
     </div>,
     <div className="person-container" key="person-container">
     <p className="general-heading">Design</p>
@@ -246,25 +246,25 @@ const Teams = () => {
           <p className="person-name">Yash Phuke</p>
       </div>
       <div className="card-with-name">
-        <PersonCard image={require("../../components/Assets/Teams/eeshanajarekar.jpg")}
+        <PersonCard image={require("../../components/Assets/Teams/eeshanajarekar.webp")}
          showOverlay={false} />
         <p className="person-name">Eeshan Ajarekar</p>
       </div>
     </div>
   </div>,
   <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/designs.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/designs.png.webp")} teamName="Team Alpha" />
     </div>,
     <div className="person-container" key="person-container">
     <p className="general-heading">Execution</p>
     <div className="person-cards">
       <div className="card-with-name">
-          <PersonCard image={require("../../components/Assets/Teams/yuktinbakshi.jpg")}
+          <PersonCard image={require("../../components/Assets/Teams/yuktinbakshi.webp")}
           showOverlay={false} />
           <p className="person-name">Yuktin Bakshi</p>
       </div>
       <div className="card-with-name">
-        <PersonCard image={require("../../components/Assets/Teams/shubhamkamble.jpg")}
+        <PersonCard image={require("../../components/Assets/Teams/shubhamkamble.webp")}
           instagram="https://www.instagram.com/_shubham_9419?utm_source=qr&igsh=YnVmeG45NDh3d2M5"
           linkedin="https://www.linkedin.com/in/shubham-kamble-0b209a262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           email= "shubh75yahoo@gmail.com"
@@ -274,13 +274,13 @@ const Teams = () => {
     </div>
   </div>,
   <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/execution.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/execution.png.webp")} teamName="Team Alpha" />
     </div>,
     <div className="person-container" key="person-container">
     <p className="general-heading">FINE ARTS & SOCIAL MEDIA</p>
     <div className="person-cards">
       <div className="card-with-name">
-          <PersonCard image={require("../../components/Assets/Teams/udaykumbhare.jpg")}
+          <PersonCard image={require("../../components/Assets/Teams/udaykumbhare.webp")}
           instagram="https://www.instagram.com/uday_kumbhare_/profilecard/?igsh=MXd2cG1jYmx0dTJkaA=="
           linkedin="https://www.linkedin.com/in/uday-kumbhare-57b876296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           email="udaykumbhare18@gmail.com"
@@ -288,7 +288,7 @@ const Teams = () => {
           <p className="person-name">Uday Kumbhare</p>
       </div>
       <div className="card-with-name">
-        <PersonCard image={require("../../components/Assets/Teams/rasikamane.jpg")}
+        <PersonCard image={require("../../components/Assets/Teams/rasikamane.webp")}
         instagram="https://www.instagram.com/_rasikamane/profilecard/?igsh=MW9yeDB2cDh5OW92bw=="
         linkedin="https://www.linkedin.com/in/rasika-mane-92398a279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         email="rasikamane2004@gmail.com"
@@ -298,13 +298,13 @@ const Teams = () => {
     </div>
   </div>,
   <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/fineartsa.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/fineartsa.png.webp")} teamName="Team Alpha" />
     </div>,
     <div className="person-container" key="person-container">
     <p className="general-heading">VJTI MUMBAI CUBE OPEN</p>
     <div className="person-cards">
       <div className="card-with-name">
-          <PersonCard image={require("../../components/Assets/Teams/achalnaikwadi.jpg")}
+          <PersonCard image={require("../../components/Assets/Teams/achalnaikwadi.webp")}
           instagram="https://www.instagram.com/_achal_naikwadi/profilecard/?igsh=MWgwOXZmbGRnMnNzNw=="
           linkedin="https://www.linkedin.com/in/achal-naikwadi-a7a12b303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           email="achalnaikwadi2005@gmail.com"
@@ -312,14 +312,14 @@ const Teams = () => {
           <p className="person-name">Achal Naikwadi</p>
       </div>
       <div className="card-with-name">
-        <PersonCard image={require("../../components/Assets/Teams/chitranshujha.jpg")}
+        <PersonCard image={require("../../components/Assets/Teams/chitranshujha.webp")}
          showOverlay={false} />
         <p className="person-name">Chitranshu Jha</p>
       </div>
     </div>
   </div>,
   <div className="team-container" key="team-container-1">
-      <TeamCard image={require("../../components/Assets/Teams/vmco.png.png")} teamName="Team Alpha" />
+      <TeamCard image={require("../../components/Assets/Teams/vmco.png.webp")} teamName="Team Alpha" />
     </div>,
   ];
 
