@@ -686,7 +686,10 @@ landing-btn:hover::after {
         position: absolute;
             bottom: 100%;
             left: 50%;
-            transform: translateX(-50%)
+            transform: translateX(-50%);
+            /* used to solve about scroll error */
+            z-index: 1006;
+            
     }
 
     .dropdown-menu.show {
@@ -706,6 +709,8 @@ landing-btn:hover::after {
         align-items: center;
         box-sizing: border-box;
         overflow-y: auto;
+        /* used to sort about scroll error */
+        z-index: 1005;
     }
 
 
