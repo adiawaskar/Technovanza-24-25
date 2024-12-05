@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
 .teams-page {
-  background-image: url("../../components//Assets/Teams/teams_bg.png");
+  background-image: url("../../components//Assets/Teams/teams_bg.webp");
     background-size: cover;
     background-position: center;
     height: 100vh;
