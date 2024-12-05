@@ -44,7 +44,7 @@ const Teams = () => {
             <PersonCard image={require("../../components/Assets/Teams/ritikanankar.jpg")}
             instagram="https://www.instagram.com/ritikanankar____"
             linkedin="https://www.linkedin.com/in/ritikanankar"
-            email="nankarritika12@gmail.com"
+            email="ritika.nankar@technovanza.org"
             showOverlay={true} />
             
             <p className="person-name">Ritika Nankar</p>
@@ -53,7 +53,7 @@ const Teams = () => {
           <PersonCard image={require("../../components/Assets/Teams/adiawaskar.jpg")}
            instagram="https://www.instagram.com/heyyitsadiiii"
             linkedin="https://www.linkedin.com/in/adiawaskar"
-            email="adiawaskar04@gmail.com"
+            email="adi.awaskar@technovanza.org"
             showOverlay={true} />
           <p className="person-name">Adi Awaskar</p>
         </div>

@@ -45,7 +45,7 @@ const GLS = () => {
     ];
     const pastLectures = [
         {
-            title: "Dr. A.P.J. Abdul Kalam",
+            title: "Late Dr. A.P.J. Abdul Kalam",
             description: "Former President of India, renowned scientist, and the visionary behind India's missile program. Known as the 'Missile Man' and awarded the Bharat Ratna.",
             imageUrl: require('../../components/LectureCard/apj_abdul_kalam.jpg'),
         },
@@ -55,7 +55,7 @@ const GLS = () => {
             imageUrl: require('../../components/LectureCard/sophia.jpeg'),
         },
         {
-            title: "Mr. Ratan Tata",
+            title: "Late Mr. Ratan Tata",
             description: "Chairman Emeritus of Tata Sons, philanthropist, and one of India's most influential business leaders. He led the Tata Group for over two decades and received the Padma Bhushan and Padma Vibhushan.",
             imageUrl: require('../../components/LectureCard/ratan_tata.jpg'),
         },
@@ -65,12 +65,12 @@ const GLS = () => {
             imageUrl: require('../../components/LectureCard/dalai_lama.avif'),
         },
         {
-            title: "Mrs. Kiran Bedi",
+            title: "Dr. Kiran Bedi",
             description: "India’s first female officer in the Indian Police Service, social activist, and advocate for prison reforms. Awarded the Ramon Magsaysay Award for her contribution to public service.",
             imageUrl: require('../../components/LectureCard/kiran_bedi.jpg'),
         },
         {
-            title: "Mr. Leland Hartwell",
+            title: "Dr. Leland Hartwell",
             description: "Nobel laureate and pioneering cancer researcher known for his contributions to cell biology and cancer therapeutics. Awarded the Nobel Prize in Physiology or Medicine in 2001.",
             imageUrl: require('../../components/LectureCard/leland_hartwell.jpg'),
         },
