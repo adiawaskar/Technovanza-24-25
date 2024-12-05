@@ -11,7 +11,7 @@
 
 */
 .full-bg {
-  background-image: url('../../../public/images/events_bg.png');
+  background-image: url('../../../public/images/events_bg.webp');
   /* Replace with your background image URL */
   background-size: cover;
   background-position: center;

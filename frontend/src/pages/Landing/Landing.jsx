@@ -314,6 +314,7 @@ const Landing = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           ></iframe>
           <div className="highlights-text">
           <p>  Technovanza, the premier technical initiative of the VJTI Social Group,
@@ -336,6 +337,7 @@ const Landing = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           ></iframe>
           <div className="theme-text">
         <p>Immerse yourself in the world of Technovanza with our theme, 
@@ -350,10 +352,17 @@ const Landing = () => {
       </div>
 
       <div id="location" className="content-box hidden">
-               <h2>Locate Us</h2>
+        <h2>Locate Us</h2>
 
-      <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9432282763996!2d72.85354627438042!3d19.022223153660192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf26f4972d21%3A0x2c50185364aca4c1!2sVeermata%20Jijabai%20Technological%20Institute%20VJTI!5e0!3m2!1sen!2sin!4v1704468679370!5m2!1sen!2sin" width="300" height="250" style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>
-               </div>
+        <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9432282763996!2d72.85354627438042!3d19.022223153660192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf26f4972d21%3A0x2c50185364aca4c1!2sVeermata%20Jijabai%20Technological%20Institute%20VJTI!5e0!3m2!1sen!2sin!4v1704468679370!5m2!1sen!2sin" 
+          width="300" 
+          height="250" 
+          style={{ border: 0 }} 
+          allowFullScreen 
+          loading="lazy">
+
+        </iframe>
+      </div>
       
     </div>
   );
