@@ -5,7 +5,7 @@ import 'css-doodle';
 import CountdownTimer from '../../components/Countdown/CountdownTimer';
 import { FaInstagram, FaLinkedin, FaYoutube, FaTwitter, FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import aboutImage from './about.jpg'
+// import aboutImage from './about.jpg'
 
 const Landing = () => {
 
@@ -268,18 +268,12 @@ const Landing = () => {
   <div className="right-frame">
         <CountdownTimer />
   </div>
-<a 
-  href="https://www.instagram.com/technovanza/?hl=en" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  id="home-link"
->
-  <div id="home" className="home-box hidden">
-    <div className="home-content">
-      <div className="home-heading"></div>
-    </div>
+<div id="home" className="home-box hidden">
+  <div className="home-content">
+    <div className="home-heading"></div>
   </div>
-</a>
+</div>
+
 
 
 
