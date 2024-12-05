@@ -1,13 +1,13 @@
 import React from 'react';
 import './GLS.css';
 import spacedeckImage from './spacedeck2.jpg';
-import garageImage from './spaceship_garage.jpeg';
+import garageImage from './spaceship_garage.webp';
 import LectureCard from '../../components/LectureCard/LectureCard';
 import CardGLS from '../../components/CardGLS/CardGLS';
 import Sponsors from '../../components/Sponsors/Sponsors';
 import sponsorsBG from './sponsorsBg4.jpg';
 import lecturersBg from './lecturersBg3.jpg';
-import hudImage from './hud1.png';
+import hudImage from './hud.webp';
 import robot from './robot3 (1) (1).png';
 import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 // import PastSponsors from '../PastSponsors/PastSponsors';
@@ -82,7 +82,7 @@ const GLS = () => {
         {
             title: "Mrs. Ratna Pathak",
             description: "Renowned Indian actress celebrated for her powerful roles in both films and television, especially in Hindi cinema. Known for her work in ‘Sarabhai vs Sarabhai’ and the Padma Bhushan award.",
-            imageUrl: require('../../components/LectureCard/ratna_pathak.jpg'),
+            imageUrl: require('../../components/LectureCard/ratna_pathak.webp'),
         },
         {
             title: "Mr. Darshan Jariwala",

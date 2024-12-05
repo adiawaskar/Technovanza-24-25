@@ -15,7 +15,7 @@ const Teams = () => {
             <PersonCard image={require("../../components/Assets/Teams/pavanpatil.jpg")}
             instagram="https://www.instagram.com/paavan_patil"
             linkedin="https://www.linkedin.com/in/paavan-patil-01496323b"
-            email="patilpaavan7286@gmail.com"
+            email="paavan.patil@technovanza.org"
             showOverlay={true} />
           <p className="person-name">Paavan Patil</p>
         </div>
@@ -23,7 +23,7 @@ const Teams = () => {
             <PersonCard image={require("../../components/Assets/Teams/anamkhanzada.jpg")}
              instagram="https://www.instagram.com/anam_khanzada_"
             linkedin="https://www.linkedin.com/in/anam-khanzada-095429305"
-            email="anam.khanzada26@gmail.com"
+            email="anam.khanzadah@technovanza.org"
             showOverlay={true} />
             <p className="person-name">Anam Khanzada</p>
         </div>
@@ -64,12 +64,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/nirmalpatil.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/nirmal_patil01?igsh=MXEzN2Vmem54dWQ2MA=="
+          linkedin="https://www.linkedin.com/in/nirmal-patil-11104825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email="nirmal.patil@technovanza.org"
+          showOverlay={true} />
           <p className="person-name">Nirmal Patil</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/shashinvathode.jpg")}
-         showOverlay={false} />
+          instagram="https://www.instagram.com/shashin_av/"
+          linkedin="https://www.linkedin.com/in/shashin-vathode-290704274/"
+          email="shashinvathode123@gmail.com"
+         showOverlay={true} />
         <p className="person-name">Shashin Vathode</p>
       </div>
     </div>
@@ -79,12 +85,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/kabirshah.jpg")}
-           showOverlay={false}/>
+            instagram="https://www.instagram.com/kabirshah133?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            linkedin="https://www.linkedin.com/in/kabir-shah-30320524a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            email="kabir13shah@gmail.com"
+           showOverlay={true}/>
           <p className="person-name">Kabir Shah</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/dineshpatel.jpg")}
-         showOverlay={false} />
+        instagram="https://www.instagram.com/dnesh.patel_/"
+        linkedin="https://www.linkedin.com/in/dinesh-patel-162533290/"
+        email="dinesh.patel@technovanza.org"
+         showOverlay={true} />
         <p className="person-name">Dinesh Patel</p>
       </div>
     </div>
@@ -101,12 +113,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/aditinasare.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/whyyyyyaditiiiiiiii?igsh=MXFianA4ZTFsMW1hNw=="
+          linkedin="https://www.linkedin.com/in/aditi-nasare-aa0017283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email="aditi.nasare@technovanza.org"
+          showOverlay={true} />
           <p className="person-name">Aditi Nasare</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/ishayupotey.jpg")}
-         showOverlay={false} />
+          instagram="https://www.instagram.com/ishayu_7743"
+          linkedin="https://www.linkedin.com/in/ishayu-potey-89777324b/"
+          email="ishayupotey@gmail.com"
+         showOverlay={true} />
         <p className="person-name">Ishayu Potey</p>
       </div>
     </div>
@@ -119,17 +137,26 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/aayushkhirraiyya.jpg")}
-          showOverlay={false} />
+          instagram= "https://www.instagram.com/ayush_asati_07?igsh=bXBldzh2NWNjYmpv"
+          linkedin= "https://www.linkedin.com/in/aayush-khirraiyya-954a41242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email= "ayushasati04@gmail.com"
+          showOverlay={true} />
           <p className="person-name">Aayush Khirraiyya</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/ishabarhate.jpg")}
-        showOverlay={false} />
+        instagram="https://www.instagram.com/isha_barhate18?igsh=bGoydTFwNTEyZWZu"
+        linkedin="https://www.linkedin.com/in/isha-barhate-914475316/"
+        email="barhateisha@gmail.com"
+        showOverlay={true} />
         <p className="person-name">Isha Barhate</p>
       </div>
       <div className="card-with-name">
             <PersonCard image={require("../../components/Assets/Teams/jayashbhuyar.jpg")}
-             showOverlay={false}/>
+              instagram="https://www.instagram.com/jayash_bhuyar/"
+              linkedin="https://www.linkedin.com/in/jayashbhuyar/"
+              email="jayashbhuyar@gmail.com"
+             showOverlay={true}/>
             <p className="person-name">Jayash Bhuyar</p>
         </div>
     </div>
@@ -139,12 +166,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/khadijakb.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/khadija_bhinderwala/?next=%2F"
+          linkedin="www.linkedin.com/in/khadija-kaeedzoher-bhinderwala-609349319"
+          email="khadijakbhinderwala@gmail.com"
+          showOverlay={true} />
           <p className="person-name">Khadija KB</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/smitsatra.jpg")}
-         showOverlay={false} />
+          instagram="https://www.instagram.com/smit.1822/profilecard/?igsh=MTh2czdxZmtybnQyaQ=="
+          linkedin= ""
+          email="smit.satra@technovanza.org"
+         showOverlay={true} />
         <p className="person-name">Smit Satra</p>
       </div>
     </div>
@@ -157,12 +190,18 @@ const Teams = () => {
   <div className="person-cards">
     <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/amrutgotpagar.jpg")}
-        showOverlay={false} />
+        instagram = "https://www.instagram.com/amrut04/"           
+        linkedin = "https://in.linkedin.com/in/amrut-gotpagar-618722258"
+        email = "amrut.gotpagar@technovanza.org"
+        showOverlay={true} />
         <p className="person-name">Amrut Gotpagar</p>
     </div>
     <div className="card-with-name">
       <PersonCard image={require("../../components/Assets/Teams/shwetakare.jpg")}
-       showOverlay={false} />
+        instagram = "https://www.instagram.com/__shweta_kare__/"           
+        linkedin = "https://www.linkedin.com/in/shweta-kare-097a86310/"
+        email = "shwetakare29@gmail.com "
+       showOverlay={true} />
       <p className="person-name">Shweta Kare</p>
     </div>
   </div>
@@ -176,12 +215,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/harshalamahajan.jpg")}
-          showOverlay={false}/>
+          instagram="https://www.instagram.com/m.harshala_99/?hl=en"
+          linkedin="https://www.linkedin.com/in/harshalam334"
+          email="mharshala334@gmail.com"
+          showOverlay={true}/>
           <p className="person-name">Harshala Mahajan</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/nishitkekane.jpg")}
-         showOverlay={false} />
+          instagram="https://www.instagram.com/only_nishit/"
+          linkedin="https://www.linkedin.com/in/nishit-kekane-b02b7324b/"
+          email="nishit.kekane04@gmail.com"
+         showOverlay={true} />
         <p className="person-name">Nishit Kekane</p>
       </div>
     </div>
@@ -194,7 +239,10 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/yashphuke.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/yasssshhhhhh_"
+          linkedin="www.linkedin.com/in/yash-phuke-606126203"
+          email="phukeyash0@gmail.com"
+          showOverlay={true} />
           <p className="person-name">Yash Phuke</p>
       </div>
       <div className="card-with-name">
@@ -217,7 +265,10 @@ const Teams = () => {
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/shubhamkamble.jpg")}
-         showOverlay={false} />
+          instagram="https://www.instagram.com/_shubham_9419?utm_source=qr&igsh=YnVmeG45NDh3d2M5"
+          linkedin="https://www.linkedin.com/in/shubham-kamble-0b209a262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email= "shubh75yahoo@gmail.com"
+         showOverlay={true} />
         <p className="person-name">Shubham Kamble</p>
       </div>
     </div>
@@ -230,12 +281,18 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/udaykumbhare.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/uday_kumbhare_/profilecard/?igsh=MXd2cG1jYmx0dTJkaA=="
+          linkedin="https://www.linkedin.com/in/uday-kumbhare-57b876296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email="udaykumbhare18@gmail.com"
+          showOverlay={true} />
           <p className="person-name">Uday Kumbhare</p>
       </div>
       <div className="card-with-name">
         <PersonCard image={require("../../components/Assets/Teams/rasikamane.jpg")}
-        showOverlay={false} />
+        instagram="https://www.instagram.com/_rasikamane/profilecard/?igsh=MW9yeDB2cDh5OW92bw=="
+        linkedin="https://www.linkedin.com/in/rasika-mane-92398a279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        email="rasikamane2004@gmail.com"
+        showOverlay={true} />
         <p className="person-name">Rasika Mane</p>
       </div>
     </div>
@@ -248,7 +305,10 @@ const Teams = () => {
     <div className="person-cards">
       <div className="card-with-name">
           <PersonCard image={require("../../components/Assets/Teams/achalnaikwadi.jpg")}
-          showOverlay={false} />
+          instagram="https://www.instagram.com/_achal_naikwadi/profilecard/?igsh=MWgwOXZmbGRnMnNzNw=="
+          linkedin="https://www.linkedin.com/in/achal-naikwadi-a7a12b303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          email="achalnaikwadi2005@gmail.com"
+          showOverlay={true} />
           <p className="person-name">Achal Naikwadi</p>
       </div>
       <div className="card-with-name">

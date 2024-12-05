@@ -16,7 +16,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: url('../../../public/images/deck.png') no-repeat center center;
+    background: url('./deck.webp') no-repeat center center;
     background-size: cover;
     z-index: 1000;
     pointer-events: none;
@@ -276,7 +276,7 @@ landing-btn:hover::after {
     height: 70%;
     width: 100%;
     text-align: center;
-    background-image: url('./techno.png');
+    background-image: url('./techno.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
