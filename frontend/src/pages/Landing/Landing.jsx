@@ -317,12 +317,8 @@ const Landing = () => {
             loading="lazy"
           ></iframe>
           <div className="highlights-text">
-          <p>  Technovanza, the premier technical initiative of the VJTI Social Group,
-        stands as one of Asia's largest techno-managerial festivals, attracting
-        over 75,000 participants each year.
-        Guided by our motto, <strong>"Taking Technology to Society,"</strong> inspired by
-        Dr. A. P. J. Abdul Kalam. We host impactful lectures from renowned speakers
-        and over 20 competitive events that showcase innovation and challenge participants.
+        <p>
+        Catch a glimpse of the innovation, excitement, and unforgettable memories from last year’s <strong>Technovanza</strong>! Watch the official aftermovie to relive the highlights, from cutting-edge tech showcases to thrilling competitions and electrifying performances. Don’t miss this chance to experience the magic all over again!
         </p>
           </div>
         </div>
