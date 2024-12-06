@@ -19,7 +19,7 @@ const Preloader = ({ onComplete }) => {
     <div className="preloader-overlay">
       <div className="preloader">
         <video
-          src={`${process.env.PUBLIC_URL}/preloader2.mp4`}
+          src={`${process.env.PUBLIC_URL}/preloader3.mp4`}
           autoPlay
           muted
           loop

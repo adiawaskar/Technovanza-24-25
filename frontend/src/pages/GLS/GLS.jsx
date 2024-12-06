@@ -1,6 +1,6 @@
 import React from 'react';
 import './GLS.css';
-import spacedeckImage from './spacedeck2.jpg';
+import spacedeckImage from './upcominggls.webp';
 import garageImage from './spaceship_garage.webp';
 import LectureCard from '../../components/LectureCard/LectureCard';
 import CardGLS from '../../components/CardGLS/CardGLS';
@@ -8,7 +8,7 @@ import Sponsors from '../../components/Sponsors/Sponsors';
 import sponsorsBG from './sponsorsBg4.jpg';
 import lecturersBg from './lecturersBg3.jpg';
 import hudImage from './hud.webp';
-import robot from './robot3 (1) (1).png';
+import robot from './robot.webp';
 import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 // import PastSponsors from '../PastSponsors/PastSponsors';
 
@@ -47,7 +47,7 @@ const GLS = () => {
         {
             title: "Late Dr. A.P.J. Abdul Kalam",
             description: "Former President of India, renowned scientist, and the visionary behind India's missile program. Known as the 'Missile Man' and awarded the Bharat Ratna.",
-            imageUrl: require('../../components/LectureCard/apj_abdul_kalam.jpg'),
+            imageUrl: require('../../components/LectureCard/apj_abdul_kalam.webp'),
         },
         {
             title: "Sophia",
@@ -117,7 +117,7 @@ const GLS = () => {
         {
             title: "Shri Gaur Gopal Das",
             description: "Internationally renowned motivational speaker, lifestyle coach, and spiritual leader associated with the ISKCON movement. Author of bestselling books and a prominent speaker at global forums.",
-            imageUrl: require('../../components/LectureCard/gaurgopal_das.png'),
+            imageUrl: require('../../components/LectureCard/gaurgopal_das.webp'),
         },
         {
             title: "Mr. Vappala Balachandran",
