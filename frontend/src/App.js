@@ -49,6 +49,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './App.css';
 import Landing from './pages/Landing/Landing';
 import GLS from './pages/GLS/GLS';
@@ -79,6 +80,7 @@ function App() {
         </Routes>
         {/* Add Analytics Component here */}
         <Analytics />
+        <SpeedInsights />
       </div>
     </Router>
   );
