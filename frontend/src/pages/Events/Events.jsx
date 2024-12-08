@@ -73,7 +73,7 @@ const Events = () => {
       content: 'Code your way to victory!', 
       imageSrc: require('../../components/Assets/Events/hackathon.png'),
       info: 'Hackathon is a high-energy event where participants come together to solve real-world problems through innovative coding solutions. It’s a marathon of creativity, teamwork, and coding where participants have limited time to build their projects and present them. Whether you\'re a seasoned developer or a newcomer, the Hackathon offers a platform to challenge yourself and showcase your skills.' ,
-      brochure: 'https://drive.google.com/drive/folders/1jh5O_RuqvjwFHF2ZzqSsi-drHLOPXHMX',
+      brochure: 'https://drive.google.com/file/d/1gV1XWZDWodIwn3_8K7YJULFmYuZZgnk5/view?usp=drive_linkX',
       register: 'https://unstop.com/o/vixc1dj?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
