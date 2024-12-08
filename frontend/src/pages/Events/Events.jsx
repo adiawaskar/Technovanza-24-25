@@ -63,14 +63,18 @@ const Events = () => {
       title: 'F1 Power Drift', 
       content: 'Race remote-controlled cars at high speed!', 
       imageSrc: require('../../components/Assets/Events/f1.png'),
-      info: 'Get ready for the ultimate racing experience at the F1 Power Drift Grand Prix! This year, it’s all about speed, precision, and power drifting. Design your own high-performance race bots and take on a challenging track full of tight turns and obstacles. Test your skills in this high-octane race, where only the fastest and most agile bots will succeed. It’s time to show off your drifting mastery and cross the finish line in style. Are you ready to drift your way to victory? Join us at Technovanza 2025!' 
+      info: 'Get ready for the ultimate racing experience at the F1 Power Drift Grand Prix! This year, it’s all about speed, precision, and power drifting. Design your own high-performance race bots and take on a challenging track full of tight turns and obstacles. Test your skills in this high-octane race, where only the fastest and most agile bots will succeed. It’s time to show off your drifting mastery and cross the finish line in style. Are you ready to drift your way to victory? Join us at Technovanza 2025!' ,
+      brochure: 'https://drive.google.com/file/d/1uOtvc8R0pw7vUOzTuAZDfq3gE3sKgG76/view?usp=drive_link',
+      register: 'https://unstop.com/o/iWx9cHr?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
       id: 8, 
       title: 'Hackathon', 
       content: 'Code your way to victory!', 
       imageSrc: require('../../components/Assets/Events/hackathon.png'),
-      info: 'Hackathon is a high-energy event where participants come together to solve real-world problems through innovative coding solutions. It’s a marathon of creativity, teamwork, and coding where participants have limited time to build their projects and present them. Whether you\'re a seasoned developer or a newcomer, the Hackathon offers a platform to challenge yourself and showcase your skills.' 
+      info: 'Hackathon is a high-energy event where participants come together to solve real-world problems through innovative coding solutions. It’s a marathon of creativity, teamwork, and coding where participants have limited time to build their projects and present them. Whether you\'re a seasoned developer or a newcomer, the Hackathon offers a platform to challenge yourself and showcase your skills.' ,
+      brochure: 'https://drive.google.com/file/d/16k8AHRcQwQdY6ghAqIRLBZDoXvV6LpVG/view?usp=drive_link',
+      register: 'https://unstop.com/o/vixc1dj?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
       id: 9, 
@@ -78,7 +82,8 @@ const Events = () => {
       content: 'Build robots that can navigate water!', 
       imageSrc: require('../../components/Assets/Events/bitbybit.png'),
       info: 'Step into the thrilling world of competitive coding with Bit-by-Bit, where every keystroke brings you closer to glory! Picture a grid of coding challenges carefully curated to test your logic, strategy, and creativity. Each row holds a set of problems, and your mission is to choose, conquer, and finish first.With the clock ticking, decisions matter: Which challenge aligns with your strengths? Can you strategize under pressure? How fast and precise can you be?This isn\'t just a competition—it\'s a battle of logic, precision, and teamwork. The first team to crack their chosen row wins the race. Whether you’re a seasoned coder or an emerging talent, Bit-by-Bit is your stage to shine. Are you ready to turn coding into a battlefield? Rise to the challenge, strategize, and emerge victorious one solution at a time.' ,
-      brochure: 'https://drive.google.com/file/d/1j1Gay3cDXwBCwc5UZjcttCEOZpb3_aT3/view?usp=drive_link'
+      brochure: 'https://drive.google.com/file/d/1j1Gay3cDXwBCwc5UZjcttCEOZpb3_aT3/view?usp=drive_link',
+      register: 'https://unstop.com/o/AC1oHsh?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
       id: 10, 
@@ -86,21 +91,31 @@ const Events = () => {
       content: 'Bot battles in a sumo wrestling arena', 
       imageSrc: require('../../components/Assets/Events/coderelay.png'),
       info: 'Welcome to Code Relay, where coding meets creativity, and teamwork drives triumph! Get ready to dive into a dynamic team-based challenge that’s as much about collaboration as it is about code. In this high-energy competition, your mission is to recreate a visually stunning website using modern web technologies. Sounds simple? Here’s the twist: it’s a relay! Each team member will take the baton to code their part within a limited time before passing it on. Precision and seamless coordination are the keys to victory. As the timer counts down, can you adapt, communicate, and code under pressure to piece together the perfect design? The team that delivers the most accurate replication wins not just the prize but the admiration of their peers. Think fast. Code faster. Relay to victory!' ,
-      brochure: 'https://drive.google.com/file/d/1Vyhs1s5TF-K_84r-4dposBFwRU2bCFJK/view?usp=drive_link'
+      brochure: 'https://drive.google.com/file/d/1Vyhs1s5TF-K_84r-4dposBFwRU2bCFJK/view?usp=drive_link',
+      register: 'https://unstop.com/o/AltsuYg?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
       id: 11, 
       title: 'Prompt Battle', 
-      content: 'The art of speedcubing and solving the Rubik\'s Cube', 
+      content: 'Prompt Battle', 
       imageSrc: require('../../components/Assets/Events/promptbattle.png'),
       info: 'Step into the arena of ideas with Prompt Battle, where creativity meets ingenuity! This is your platform to think outside the box, innovate on the spot, and turn your concepts into groundbreaking solutions. Whether it\'s technical brilliance or imaginative storytelling, this battle will test your ability to adapt and impress in real time. Compete against the sharpest minds and let your ideas do the talking. The spotlight is yours—are you ready to take the stage and emerge victorious? Let the battle begin at Technovanza 2025!' ,
       brochure: 'https://drive.google.com/file/d/1kaWxIEcn4PyWh06lMIks5nFEIZPlEi6D/view?usp=drive_link'
+    },    
+    { 
+      id: 12, 
+      title: 'School Cup', 
+      content: 'Competition for schools', 
+      imageSrc: require('../../components/Assets/Events/schoolcup.png'),
+      info: 'Technovanza School Cup 2024 is here! Are you ready to innovate, compete, and explore the technologies of tomorrow? Step into the world of Technologies of the Parallel Future and bring your ideas to life! Showcase your skills, challenge your limits, and stand a chance to shine among the brightest young minds! ' ,
+      brochure: 'https://drive.google.com/file/d/1zrO2StSdOffGQhHKMkZPPBivHLGXI9l1/view?usp=drive_link',
+      register: 'https://unstop.com/o/X7Lgye0?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
   ];
 
   const [cardIndex, setCardIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [selectedEvent, setSelectedEvent] = useState(null); // Track selected event
+  const [selectedEvent, setSelectedEvent] = useState(null);
   const [isDetailsVisible, setIsDetailsVisible] = useState(false);
 
 
