@@ -11,7 +11,7 @@ const Events = () => {
       content: 'Robots battle in an epic showdown', 
       imageSrc: require('../../components/Assets/Events/robowars.png'), 
       info: 'Strength doesn’t come from what you can do; it comes from overcoming what your opponent thought you couldn’t. Technovanza 2025 presents the Robo Wars, the ultimate battleground where engineering meets destruction! Gear up to witness the clash of the titans as robots weighing 8 kg and 15 kg lock horns in an arena built for mayhem. From powerful spins to strategic strikes, every move counts as you unleash your bot’s full potential. This is not just a test of toughness but also of tactics, as you outsmart and overpower your opponent in a no-holds-barred robotic rumble. Prepare to electrify the crowd with sparks flying, metal clashing, and bots battling for supremacy. Are you ready to dominate the arena? Bring your best bot and show us the true power of innovation. Let the war begin!',
-      brochure: 'https://drive.google.com/file/d/1HXVXm4xIJplBU00spOE-nSfeKewaLMmw/view?usp=drive_link',
+      brochure: 'https://drive.google.com/file/d/1D5BeUjlFlkPZ25Hpc_RYpPae_XnH2d55/view?usp=drive_link',
       register: 'https://unstop.com/o/Bw2t7gD?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
