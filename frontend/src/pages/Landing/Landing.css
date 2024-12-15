@@ -7,6 +7,47 @@ body {
     padding: 0;
 }
 
+.reminder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8vw;
+    position: fixed;
+    bottom: 11vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1010;
+    background-color: transparent;
+    border-radius: 30%;
+}
+
+h1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.text-red {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.blink-hard {
+    animation: blinker 1s step-end infinite;
+}
+
+.blink-soft {
+    animation: blinker 3.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 
 
 #cockpit-background {
@@ -588,7 +629,28 @@ landing-btn:hover::after {
         background-size: cover;
         overflow: hidden;
     }
+ h1 {
+     float: left;
+     width: 80%;
+     text-align: center;
+     margin-top: 3rem;
+ }
 
+ .reminder {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 75%;
+     font-family: 'Orbitron', sans-serif;
+     font-size: 2vw;
+     position: fixed;
+     bottom: 80vh;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 1010;
+     background-color: transparent;
+     border-radius: 30%;
+ }
         .left-frame,
     .right-frame {
         display: none;
@@ -712,6 +774,7 @@ landing-btn:hover::after {
         /* used to sort about scroll error */
         z-index: 1005;
     }
+    
 
 
 

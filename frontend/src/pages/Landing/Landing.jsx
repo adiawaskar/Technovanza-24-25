@@ -5,8 +5,7 @@ import 'css-doodle';
 import CountdownTimer from '../../components/Countdown/CountdownTimer';
 import { FaInstagram, FaLinkedin, FaYoutube, FaTwitter, FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import aboutImage from './about.jpg'
-
+// import aboutImage from './about.jpg'S
 const Landing = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -226,11 +225,15 @@ const Landing = () => {
 
     <div className="bottom-nav">   
         <Link to="/events"><span>Events </span></Link>
-        <Link to="/exhibition"><span>Exhibition </span></Link>
+        <Link to="/exhibition"><span>Registration </span></Link>
         <Link to="/gls"><span>GLS </span></Link>
         <Link to="/gallery"><span>Gallery </span></Link>
         <Link to="/teams"><span>Teams </span></Link>
     </div>
+
+    <div className="reminder">
+  <h1 className="text-red blink-soft">Grab your Gate Pass.<br /> Register Now!</h1>
+</div>
 
 
 <div className="left-frame">

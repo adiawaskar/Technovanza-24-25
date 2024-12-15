@@ -17,7 +17,7 @@ const Exhibition2 = () => {
     <div className="exhibition-container">
       <SecondaryNavbar />
       <div className="exhibition-frame">
-          <h1 className="exhibition-heading">EXHIBITION</h1>
+          <h1 className="exhibition-heading">REGISTRATION</h1>
       </div>
 
       {/* Left Door */}
