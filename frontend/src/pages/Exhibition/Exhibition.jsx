@@ -30,10 +30,13 @@ const Exhibition2 = () => {
         <div className="background-content">
           <h2>Visitors</h2>
           <p>Embark on a journey of innovation and exploration at Technovanza's exhibition! Immerse yourself in cutting-edge projects, revolutionary technologies, and ingenious ideas. Witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from brilliant minds behind the projects and be part of the excitement at Technovanza. Don't miss this opportunity to experience the forefront of technological advancement!</p>
-            <div className="exhibition-button">
+          <div
+            className="exhibition-button"
+            onClick={() => window.open('https://lu.ma/zgwb87cd', '_blank')}
+          >
             <div className="exhibition-register-btn">
-            <span>Coming Soon</span>
-          </div>
+              <span>Register Now</span>
+            </div>
           </div>
         </div>
          <div className={`door-text ${isLeftDoorOpen ? 'open' : ''}`}>

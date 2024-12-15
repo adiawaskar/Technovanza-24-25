@@ -73,7 +73,7 @@ const Events = () => {
       content: 'Code your way to victory!', 
       imageSrc: require('../../components/Assets/Events/hackathon.png'),
       info: 'Hackathon is a high-energy event where participants come together to solve real-world problems through innovative coding solutions. It’s a marathon of creativity, teamwork, and coding where participants have limited time to build their projects and present them. Whether you\'re a seasoned developer or a newcomer, the Hackathon offers a platform to challenge yourself and showcase your skills.' ,
-      brochure: 'https://drive.google.com/file/d/15gEUhxaq5sMmbkqNyMeVUGY8shjnDgiF/view?usp=drive_link',
+      brochure: 'https://drive.google.com/file/d/17SWu0nrBbZDso95KkpcMiryK3dAtzX_b/view?usp=drive_link',
       register: 'https://unstop.com/o/vixc1dj?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
@@ -103,13 +103,40 @@ const Events = () => {
     //   brochure: 'https://drive.google.com/file/d/1kaWxIEcn4PyWh06lMIks5nFEIZPlEi6D/view?usp=drive_link'
     // },    
     { 
-      id: 12, 
+      id: 11, 
       title: 'School Cup', 
       content: 'Competition for schools', 
       imageSrc: require('../../components/Assets/Events/schoolcup.png'),
       info: 'Technovanza School Cup 2024 is here! Are you ready to innovate, compete, and explore the technologies of tomorrow? Step into the world of Technologies of the Parallel Future and bring your ideas to life! Showcase your skills, challenge your limits, and stand a chance to shine among the brightest young minds! ' ,
       brochure: 'https://drive.google.com/file/d/1YFrC0B8Ef02R0iY5U6Ez93LUAOPwSHi9/view?usp=drive_link',
       register: 'https://unstop.com/o/X7Lgye0?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },    
+    { 
+      id: 12, 
+      title: 'Drone Workshop', 
+      content: 'Workshop', 
+      imageSrc: require('../../components/Assets/Events/drone_workshop.png'),
+      info: 'Unleash your potential with wings of innovation! Join us for the Drone Workshop at Technovanza 2025 and transform your hobby into a high-flying industry skill. ' ,
+      brochure: '',
+      register: 'https://unstop.com/o/a4VoFC6?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },    
+    // { 
+    //   id: 13, 
+    //   title: 'Finance Workshop', 
+    //   content: 'Workshop', 
+    //   imageSrc: require('../../components/Assets/Events/schoolcup.png'),
+    //   info: 'Unlock Your Financial Future! Dive into the world of investments and finance with an industry expert!' ,
+    //   brochure: '',
+    //   register: 'https://unstop.com/o/u8ixZfp?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    // },    
+    { 
+      id: 14, 
+      title: 'Ansys TechDay', 
+      content: 'Workshop', 
+      imageSrc: require('../../components/Assets/Events/ansys_workshop.jpeg'),
+      info: 'Step into the World of Multiphysics with Ansys! Ready to dive into cutting-edge simulation technologies? Join the Ansys Workshop and unlock a new perspective on innovation and research!' ,
+      brochure: '',
+      register: 'https://unstop.com/o/awMx94S?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
   ];
 
