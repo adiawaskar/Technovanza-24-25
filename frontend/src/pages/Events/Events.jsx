@@ -144,7 +144,6 @@ const Events = () => {
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/drone_workshop.png'),
       info: 'Unleash your potential with wings of innovation! Join us for the Drone Workshop at Technovanza 2025 and transform your hobby into a high-flying industry skill. ' ,
-      brochure: '',
       register: 'https://unstop.com/o/a4VoFC6?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
     { 
@@ -153,7 +152,6 @@ const Events = () => {
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/finance_workshop.png'),
       info: 'Unlock Your Financial Future! Dive into the world of investments and finance with an industry expert!' ,
-      brochure: '',
       register: 'https://unstop.com/o/a4VoFC6?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
     { 
@@ -162,7 +160,6 @@ const Events = () => {
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/ansys_workshop.jpeg'),
       info: 'Step into the World of Multiphysics with Ansys! Ready to dive into cutting-edge simulation technologies? Join the Ansys Workshop and unlock a new perspective on innovation and research!' ,
-      brochure: '',
       register: 'https://unstop.com/o/awMx94S?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
   ];
@@ -276,13 +273,25 @@ const Events = () => {
           <p>{events[cardIndex].info}</p>
         </div>
         <div className="event-buttons">
-            <div className="register-btn" onClick={() => window.open(events[cardIndex].register, '_blank')}>
-                <span>Register</span>
-            </div>
-            <div className="brochure-btn" onClick={() => window.open(events[cardIndex].brochure, '_blank')}>
-                <span>Brochure</span>
-            </div>
-        </div>
+        {events[cardIndex].register && ( // Check if brochure exists
+          <div 
+            className="register-btn" 
+            onClick={() => window.open(events[cardIndex].register, '_blank')}
+          >
+            <span>Register</span>
+          </div>
+        )}
+        
+        {events[cardIndex].brochure && ( // Check if brochure exists
+          <div 
+              className="brochure-btn" 
+              onClick={() => window.open(events[cardIndex].brochure, '_blank')}
+          >
+              <span>Brochure</span>
+          </div>
+        )}
+</div>
+
       </div>
      
         <div className="button-container">
