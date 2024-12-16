@@ -644,7 +644,7 @@ landing-btn:hover::after {
      font-family: 'Orbitron', sans-serif;
      font-size: 2vw;
      position: fixed;
-     bottom: 80vh;
+     bottom: 75vh;
      left: 50%;
      transform: translateX(-50%);
      z-index: 1010;
