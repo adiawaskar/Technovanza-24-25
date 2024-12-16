@@ -32,7 +32,7 @@ const SecondaryNavbar = () => {
           <Link to="/events" className="secondary-nav-link">Events</Link>
         </li>
         <li className="secondary-nav-list-item">
-          <Link to="/exhibition" className="secondary-nav-link">Registration</Link>
+          <Link to="/exhibition" className="secondary-nav-link">GatePass</Link>
         </li>
         <li className="secondary-nav-list-item">
           <Link to="/gls" className="secondary-nav-link">GLS</Link>
