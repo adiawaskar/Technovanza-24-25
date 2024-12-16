@@ -323,7 +323,7 @@
         width: 95%;
         /* Full width with margins */
         max-width: 600px;
-            height: 70%;
+            height: auto;
         /* Limit the size */
         /* padding: 20px; */
         background-color: rgba(1, 11, 12, 0.9);
