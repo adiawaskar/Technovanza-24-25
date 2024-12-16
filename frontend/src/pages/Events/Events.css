@@ -425,7 +425,7 @@
 /* Styling for Heading and Paragraph */
 .event-details-box h2 {
   font-family: 'Orbitron';
-  font-size: 3rem;
+  font-size: 2rem;
   /* Increase size of the heading */
   font-weight: bold;
   color: #08d2ec;
@@ -444,6 +444,7 @@
   color: #cdeffb;
   text-align: left;
   overflow-y: auto;
+  height: 80%;
 }
 
 /* Custom Blue Scrollbar Styles */
