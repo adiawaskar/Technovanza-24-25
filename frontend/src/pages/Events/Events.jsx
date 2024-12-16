@@ -271,27 +271,27 @@ const Events = () => {
         <div className={`event-details-box ${isAnimating ? 'details-exit-active' : 'details-enter-active'}`}>
           <h2>{events[cardIndex].title}</h2>
           <p>{events[cardIndex].info}</p>
-        </div>
-        <div className="event-buttons">
-        {events[cardIndex].register && ( // Check if brochure exists
-          <div 
-            className="register-btn" 
-            onClick={() => window.open(events[cardIndex].register, '_blank')}
-          >
-            <span>Register</span>
-          </div>
-        )}
-        
-        {events[cardIndex].brochure && ( // Check if brochure exists
-          <div 
-              className="brochure-btn" 
-              onClick={() => window.open(events[cardIndex].brochure, '_blank')}
-          >
-              <span>Brochure</span>
-          </div>
-        )}
-</div>
 
+          <div className="event-buttons">
+              {events[cardIndex].register && ( // Check if brochure exists
+                <div 
+                  className="register-btn" 
+                  onClick={() => window.open(events[cardIndex].register, '_blank')}
+                >
+                  <span>Register</span>
+                </div>
+              )}
+            
+              {events[cardIndex].brochure && ( // Check if brochure exists
+                <div 
+                    className="brochure-btn" 
+                    onClick={() => window.open(events[cardIndex].brochure, '_blank')}
+                >
+                    <span>Brochure</span>
+                </div>
+              )}
+             </div>
+        </div>
       </div>
      
         <div className="button-container">

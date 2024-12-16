@@ -555,7 +555,7 @@
                 .event-buttons {
                   width: 100%;
                   display: flex;
-                  gap: 100px;
+                  gap: 10px;
                 }
   .event-details-container {
     display: none;
