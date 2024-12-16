@@ -78,6 +78,15 @@ const Events = () => {
     },
     { 
       id: 9, 
+      title: 'Tech-a-thon', 
+      content: 'Code your way to victory!', 
+      imageSrc: require('../../components/Assets/Events/techathon.png'),
+      info: '24 hours. One mission. Infinite possibilities! Join us at TECH-A-THON \'25 — the ultimate ideathon where innovation meets revolution. This event serves as a platform for individuals to: * Diagnose Problems: Understand and analyze predefined challenges. * Explore Opportunities: Identify key opportunities for solving the problem. * Craft Viable Solutions: Develop structured ideas, roadmaps, and actionable plans to address the challenge effectively. Tech-A-Thon 2024 encourages participants to think outside the box, pushing the boundaries of creativity and innovation. Whether it\'s through detailed concepts, solution frameworks, or actionable plans, this event focuses on ideas that can drive real-world impact. In Tech-A-Thon 2024, the focus is on: * Identifying opportunities within the challenge. * Thinking eatively to develop concepts and actionable strategies. * Building well-researched ideas that are innovative, feasible, and impactful. * This makes Tech-A-Thon 2024 an exciting platform for ideators, strategists, visionaries, and problem-solvers who love to craft meaningful solutions and explore ideas that can create a real-world difference.' ,
+      brochure: 'https://drive.google.com/file/d/153oK_dqLi7yJYwjx2VZ6xRr5rkCniB6a/view?usp=drive_link',
+      register: 'https://unstop.com/o/G8Kmf1v?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },
+    { 
+      id: 10, 
       title: 'Bit By Bit', 
       content: 'Build robots that can navigate water!', 
       imageSrc: require('../../components/Assets/Events/bitbybit.png'),
@@ -86,13 +95,31 @@ const Events = () => {
       register: 'https://unstop.com/o/AC1oHsh?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     { 
-      id: 10, 
+      id: 11, 
       title: 'Code Relay', 
       content: 'Bot battles in a sumo wrestling arena', 
       imageSrc: require('../../components/Assets/Events/coderelay.png'),
       info: 'Welcome to Code Relay, where coding meets creativity, and teamwork drives triumph! Get ready to dive into a dynamic team-based challenge that’s as much about collaboration as it is about code. In this high-energy competition, your mission is to recreate a visually stunning website using modern web technologies. Sounds simple? Here’s the twist: it’s a relay! Each team member will take the baton to code their part within a limited time before passing it on. Precision and seamless coordination are the keys to victory. As the timer counts down, can you adapt, communicate, and code under pressure to piece together the perfect design? The team that delivers the most accurate replication wins not just the prize but the admiration of their peers. Think fast. Code faster. Relay to victory!' ,
       brochure: 'https://drive.google.com/file/d/1uUlKO7FOhEruRdMjmRslQCBBwVFoMrfS/view?usp=drive_link',
       register: 'https://unstop.com/o/AltsuYg?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },
+    { 
+      id: 12, 
+      title: 'VMCO', 
+      content: 'VMCO', 
+      imageSrc: require('../../components/Assets/Events/vmco.png'),
+      info: ' VJTI Cubing Open: Are you a speed cubing enthusiast? Get ready to twist, turn, and solve your way to glory at the VJTI Cubing Open! Show off your skills and compete with the best cubers to set records and win big. Technovanza, brings you a Rubik’s cube competition, VJTI Mumbai Cube Open. Get ready to put your muscle memory and spatial thinking skills to the test. What to Expect? Exciting rounds that test your speed, precision, and technique. Compete in various categories and prove you\'re a cubing master. A platform to showcase your passion for solving puzzles at lightning speed. With 4 events - 3x3, 4x4, One Handed 3x3 and Blind Folded 3x3 event where you get to challenge your coordination and understanding with fellow cubers.' ,
+      brochure: 'https://drive.google.com/file/d/1wWbLkAArzrKDeVZsqsmBXnjOe_3cuFb2/view?usp=drive_link',
+      register: 'https://unstop.com/o/G90uS28?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },
+    { 
+      id: 13, 
+      title: 'Kinetiq', 
+      content: 'Kinetiq', 
+      imageSrc: require('../../components/Assets/Events/kinetiq.png'),
+      info: 'Think fast, think sharp, think KINETIQ! Technovanza brings you the ultimate quiz competition — where your knowledge meets the challenge. The quiz will consist of three rounds:First Round: MCQ (Multiple Choice Questions) Participants will be given a question paper with multiple-choice questions &options. You must select the correct answer. Second Round: Viva In this round, participants will answer questions verbally in a face-to-face format. Third Round: Buzzer Round: This is a fast-paced round where participants must press the buzzer to answer questions The host will announce the questions and keep a record of the time to answer by each participant. Each round will consist of 10-20 questions. The eligible winners for the next round will only go further ahead. Use of devices is prohibited, if any are recorded the participant will be disqualified. The question type can be filled in the blanks, answer the following and choose the correct option.' ,
+      brochure: 'https://drive.google.com/file/d/1MndlEwThvwaLoRC7GHSG15CLf9PiZgw8/view?usp=drive_link',
+      register: 'https://unstop.com/o/tQwMpxT?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },
     // { 
     //   id: 11, 
@@ -103,7 +130,7 @@ const Events = () => {
     //   brochure: 'https://drive.google.com/file/d/1kaWxIEcn4PyWh06lMIks5nFEIZPlEi6D/view?usp=drive_link'
     // },    
     { 
-      id: 11, 
+      id: 14, 
       title: 'School Cup', 
       content: 'Competition for schools', 
       imageSrc: require('../../components/Assets/Events/schoolcup.png'),
@@ -112,7 +139,7 @@ const Events = () => {
       register: 'https://unstop.com/o/X7Lgye0?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
     { 
-      id: 12, 
+      id: 15, 
       title: 'Drone Workshop', 
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/drone_workshop.png'),
@@ -120,17 +147,17 @@ const Events = () => {
       brochure: '',
       register: 'https://unstop.com/o/a4VoFC6?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
     },    
-    // { 
-    //   id: 13, 
-    //   title: 'Finance Workshop', 
-    //   content: 'Workshop', 
-    //   imageSrc: require('../../components/Assets/Events/schoolcup.png'),
-    //   info: 'Unlock Your Financial Future! Dive into the world of investments and finance with an industry expert!' ,
-    //   brochure: '',
-    //   register: 'https://unstop.com/o/u8ixZfp?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
-    // },    
     { 
-      id: 14, 
+      id: 16, 
+      title: 'Finance Workshop', 
+      content: 'Workshop', 
+      imageSrc: require('../../components/Assets/Events/finance_workshop.png'),
+      info: 'Unlock Your Financial Future! Dive into the world of investments and finance with an industry expert!' ,
+      brochure: '',
+      register: 'https://unstop.com/o/a4VoFC6?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },    
+    { 
+      id: 17, 
       title: 'Ansys TechDay', 
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/ansys_workshop.jpeg'),

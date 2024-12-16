@@ -29,7 +29,7 @@ const Exhibition2 = () => {
         />
         <div className="background-content">
           <h2>Visitors</h2>
-          <p>Embark on a journey of innovation and exploration at Technovanza's exhibition! Immerse yourself in cutting-edge projects, revolutionary technologies, and ingenious ideas. Witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from brilliant minds behind the projects and be part of the excitement at Technovanza. Don't miss this opportunity to experience the forefront of technological advancement!</p>
+          <p>Embark on a journey of innovation and exploration at <strong>Technovanza's</strong> exhibition! Immerse yourself in cutting-edge projects, revolutionary technologies, and ingenious ideas. Witness the convergence of creativity and expertise, as talented minds from across the country display their innovations. Gain insights from brilliant minds behind the projects and be part of the excitement at <strong>Technovanza</strong>. Don't miss this opportunity to experience the forefront of technological advancement!</p>
           <div
             className="exhibition-button"
             onClick={() => window.open('https://lu.ma/zgwb87cd', '_blank')}
@@ -61,16 +61,19 @@ const Exhibition2 = () => {
           className="background"
         />
         <div className="background-content">
-          <h2>Exhibitors</h2>
-          <p>Calling all innovators and creators! Showcase your groundbreaking projects and ideas at Technovanza's exhibition. This is your chance to spotlight your technological marvels, share your passion for innovation, and connect with a diverse audience of tech enthusiasts. Whether you're a student, a startup, or an established tech wizard, this is the platform to exhibit your prowess. Set up your project, demonstrate its potential, and leave a lasting impression on the vibrant tech community.</p>
-          <div className="exhibition-button">
+          <h2>School Registration</h2>
+          <p>Technovanza 2024-25 proudly presents an exciting lineup of exhibitions featuring cutting-edge robotics and technology. Explore humanoid and quadruped robots from <strong>Unitree Robotics</strong>, the innovative Indro humanoid, and groundbreaking solutions by <strong>Ariligent Robots</strong> and <strong>Janyu Tech</strong>. Discover inspiring designs by <strong>Bot Makers</strong>, sparking creativity in the next generation. Schools are invited to register and give students an unparalleled glimpse into the future of robotics.</p>
+          <div
+            className="exhibition-button"
+            onClick={() => window.open('https://forms.gle/A4EQafbrp51M7T3MA', '_blank')}
+          >
             <div className="exhibition-register-btn">
-            <span>Coming Soon</span>
+            <span>Register Now</span>
           </div>
           </div>
         </div>
          <div className={`door-text ${isRightDoorOpen ? 'open' : ''}`}>
-          Entry for Exhibitors
+          Registration for schools
         </div>
  
         <img

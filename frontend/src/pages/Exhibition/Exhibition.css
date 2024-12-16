@@ -91,7 +91,13 @@
     transform: translate(-50%, -50%);
 }
 
-
+.background-content strong{
+    /* color: #a3f7ff; */
+    color: #00ffff;
+    font:bolder;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(163, 247, 255, 0.6), 0 0 15px rgba(163, 247, 255, 0.3);
+}
 .exhibition-register-btn {
     align-items: center;
     padding: 15px 15px;
