@@ -1,4 +1,8 @@
-# Technovanza
+<div align="center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYdMvf4pwwPTSIp28Erl63TM04qGLi9em_w&s" alt="Technovanza Logo" />
+</div>
+
+<h1 align="center">TECHNOVANZA</h1>
 
 Welcome to the official repository for **Technovanza 2024-25**, the premier tech-managerial festival of **Veermata Jijabai Technological Institute (VJTI)**. Technovanza is a celebration of innovation, engineering, and management with the motto: **"Taking Technology to Society."**
 
@@ -25,7 +29,7 @@ The official Technovanza website serves as the central hub for all event-related
 - **GLS:** Dedicated sections for Guest Lecture Series with expert speakers.
 - **Gate Pass:** Registration link for visitors.
 - **Teams:** Student led team members and their contact details.
-- **Gallery:** Album collection of previous years festival.
+- **Gallery:** Technovanza past album collection is displayed.
 
 ### Features
 - **Responsive Design:** Optimized for all devices, from desktops, mobiles and tablets.
@@ -54,14 +58,12 @@ The official Technovanza website serves as the central hub for all event-related
   </a>
 </p>
 
-
 The website is built using modern web development practices to ensure high performance and usability.
 
 ## Deployment
 The website is live and accessible to everyone. Check it out here: [technovanza.org](https://technovanza.org)
 
 ### Stats (as of deployment):
-- **Page Load Time:** ~1.2s (Optimized for speed)
 - **Responsive Design Compatibility:** 100%
 - **Browser Compatibility:** Tested on Chrome, Firefox, Edge, and Safari
 
