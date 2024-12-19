@@ -15,7 +15,9 @@ const CardGLS = ({ title, description, imageUrl, buttonText, date, time, venue }
                     <p>- Time: {time}</p>
                     <p>- Venue: {venue}</p>
                 </div>
-                <button className="gls-button">{buttonText}</button>
+                <button className="gls-button" onClick={() => window.open('https://lu.ma/zgwb87cd', '_blank')}>{buttonText}
+                </button>
+                
             </div>
         </div>
     );

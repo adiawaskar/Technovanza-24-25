@@ -14,7 +14,64 @@ import SecondaryNavbar from '../../components/SecondaryNavbar/SecondaryNavbar';
 
 
 const GLS = () => {
-    const upcomingEvents = [
+    const upcomingExhibition = [
+        {
+            title: "Unitree Robotics",
+            description: "Meet the ultimate duo of agility and intelligence — G1 and GO2 by Unitree Robotics! 🚀 Watch them redefine robotics like never before. Secure your spot today!",
+            imageUrl: require("../../components/Assets/GLS/unitree.webp"), // Replace with actual image URL
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "9am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+        {
+            title: "Artiligent Robots",
+            description: "Step into the world of intelligent robots with Ariligent! From smart solutions to futuristic designs, experience technology that’s one step ahead.",
+            imageUrl: require("../../components/Assets/GLS/artiligent.webp"),  // Replace with actual image URL
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "9am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+        {
+            title: "Indro 6.0",
+            description: "Meet Indro 6.0 — India's largest humanoid robot! A masterpiece of innovation and engineering awaits you. Join us and witness history in the making!",
+             imageUrl: require("../../components/Assets/GLS/indro.webp"), 
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "9am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+        {
+            title: "Janyutech Robots",
+            description: "Revolutionizing defense, one innovation at a time! Don’t miss the ultimate showcase of advanced AI and precision engineering with Janyutech Robots. Be there to witness the future of technology!",
+             imageUrl: require("../../components/Assets/GLS/janyutech.webp"), 
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "9am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+        {
+            title: "Udaan 1.0",
+            description: "Elevate your passion for technology with Udaan 1.0. A DIY drone kit that takes learning to new heights! Don't just dream of flying; build and pilot your innovation at Technovanza 2025.",
+            imageUrl: require("../../components/Assets/GLS/udaan.webp"), 
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "9am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+        {
+            title: "Robo Bionics",
+            description: "Join us at the Science and Tech Exhibition 2024 to witness 'Robo Bionics Grippy,' India’s 3D-printed prosthetic hand with touch sensitivity and multi-grip control.",
+            imageUrl: require("../../components/Assets/GLS/robobionics.webp"), 
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "10am - 5pm",
+            venue: "VJTI Mumbai"
+        },
+    ];
+
+    const upcomingGLS = [
         {
             title: "Upcoming GLS Event 1",
             description: "Prepare for an unforgettable event where industry leaders and innovators come together to share their insights and expertise. This session promises to ignite your curiosity, expand your knowledge, and inspire you to take on new challenges. Join us as we embark on a journey into the latest advancements and future possibilities!",
@@ -277,11 +334,11 @@ const GLS = () => {
                  </div>
             </div>
 
-            {/* Horizontal Scroll */}
+            {/* Horizontal Scroll for exhibition*/}
             <div className="horizontal-scroll-container">
-                <h1 className="upcoming-gls-text">UPCOMING GLS</h1>
+                <h1 className="upcoming-exhibition-text">UPCOMING EXHIBITION</h1>
                 <div className="horizontal-scroll">
-                    {upcomingEvents.map((event, index) => (
+                    {upcomingExhibition.map((event, index) => (
                         <div
                             key={index}
                             className="scroll-item"
@@ -308,7 +365,45 @@ const GLS = () => {
                         </div>
                     ))}
                 </div>
+                <h3 className="swipe">swipe for more</h3>
             </div>
+
+
+            {/* Horizontal Scroll for gls */}
+            <div className="horizontal-scroll-container">
+                <h1 className="upcoming-gls-text">UPCOMING GLS</h1>
+                <div className="horizontal-scroll">
+                    {upcomingGLS.map((event, index) => (
+                        <div
+                            key={index}
+                            className="scroll-item"
+                            style={{
+                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${spacedeckImage})`, 
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                minWidth: '100vw',
+                                minHeight: '100vh',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                        >
+                            <CardGLS
+                                title={event.title}
+                                description={event.description}
+                                imageUrl={event.imageUrl}
+                                buttonText={event.buttonText}
+                                date={event.date}
+                                time={event.time}
+                                venue={event.venue}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <h3 className="swipe">swipe for more</h3>
+            </div>
+
+
             <div className="content-container" style={{ backgroundImage: `url(${lecturersBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
   <section className="past-lectures">
     <h1 className="past-lecturers-text">Past Lecturers</h1>
