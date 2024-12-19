@@ -133,6 +133,21 @@ const GLS = () => {
             imageUrl: require('../../components/LectureCard/leland_hartwell.jpg'),
         },
         {
+            title: "Mr. Adam Cheyer",
+            description: "A visionary computer scientist and entrepreneur, co-founder of Siri Inc., and a key contributor to groundbreaking AI and voice assistant technologies.",
+            imageUrl: require('../../components/LectureCard/adamcheyer.webp'),
+        },
+        {
+            title: "Mr. Alan Mamedi",
+            description: "Co-founder and CEO of Truecaller, a global leader in caller identification and spam blocking technology, simplifying communication for millions worldwide.",
+            imageUrl: require('../../components/LectureCard/alanmamedi.avif'),
+        },
+        {
+            title: "Mrs. Karishma Mehta",
+            description: "Founder of Humans of Bombay, a storytelling platform that captures and shares inspiring personal narratives of individuals from diverse walks of life.",
+            imageUrl: require('../../components/LectureCard/karishmamehta.png'),
+        },
+        {
             title: "Mr. Boman Irani",
             description: "Popular Indian actor known for his versatile roles in Bollywood and his achievements in the entertainment industry. Awarded the Filmfare Award for Best Supporting Actor.",
             imageUrl: require('../../components/LectureCard/boman_irani.jpg'),
@@ -183,9 +198,9 @@ const GLS = () => {
             imageUrl: require('../../components/LectureCard/vappala_balachandran.jpg'),
         },
         {
-            title: "Dr. A.S. Kiran Kumar",
-            description: "Former Chairman of ISRO, known for his leadership in the successful Mars Orbiter Mission (Mangalyaan). Awarded Padma Bhushan and recognized as one of India’s top scientists.",
-            imageUrl: require('../../components/LectureCard/dr_as_kiran_kumar.webp'),
+            title: "Dr. Niranjan Hiranandani",
+            description: "A prominent Indian entrepreneur, co-founder and managing director of the Hiranandani Group, renowned for transforming urban landscapes with world-class real estate projects.",
+            imageUrl: require('../../components/LectureCard/niranjanhiranandani.jpg'),
         },
         {
             title: "Padmashree Nana Patekar",
@@ -221,6 +236,21 @@ const GLS = () => {
             title: "Shree B.N. Ramakrishna",
             description: "A senior scientist at ISRO, B.N. Ramakrishna contributed to the development of satellite communication systems and space research, playing a pivotal role in ISRO's early missions and infrastructure.",
             imageUrl: require('../../components/LectureCard/bn_ramakrishna.jpg'),
+        },
+        {
+            title: "Admiral Sunil Lamba",
+            description: "Former Chief of Naval Staff of India, he led the Indian Navy with distinction, emphasizing modernization, strategic vision, and maritime security.",
+            imageUrl: require('../../components/LectureCard/sunillamba.jpg'),
+        },
+        {
+            title: "Mr. Atul Rane",
+            description: "Renowned Indian aerospace scientist and Director General of BrahMos Aerospace, contributing significantly to India's defense capabilities with advancements in missile technology.",
+            imageUrl: require('../../components/LectureCard/atulrane.jpg'),
+        },
+        {
+            title: "Birender Singh Dhanoa",
+            description: "Former Chief of Air Staff of the Indian Air Force, known for his leadership during the Balakot airstrikes and strengthening India's aerial defense capabilities.",
+            imageUrl: require('../../components/LectureCard/birendersinghdhanoa.jpg'),
         },
         {
             title: "A. Arun",
