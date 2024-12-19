@@ -35,7 +35,7 @@ const SecondaryNavbar = () => {
           <Link to="/exhibition" className="secondary-nav-link">GatePass</Link>
         </li>
         <li className="secondary-nav-list-item">
-          <Link to="/gls" className="secondary-nav-link">GLS</Link>
+          <Link to="/gls" className="secondary-nav-link">Expo</Link>
         </li>
         <li className="secondary-nav-list-item">
           <Link to="/gallery" className="secondary-nav-link">Gallery</Link>

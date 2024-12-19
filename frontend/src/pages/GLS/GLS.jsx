@@ -1,6 +1,7 @@
 import React from 'react';
 import './GLS.css';
 import spacedeckImage from './upcominggls.webp';
+import exhibitionImage from './upcomingexhibition.webp';
 import garageImage from './spaceship_garage.webp';
 import LectureCard from '../../components/LectureCard/LectureCard';
 import CardGLS from '../../components/CardGLS/CardGLS';
@@ -325,7 +326,7 @@ const GLS = () => {
             <SecondaryNavbar />
             {/* Full-page Background */}
             <div className="full-page" style={{ backgroundImage: `url(${garageImage})` }}>
-                <h1 className="centered-text">Guest Lecture Series</h1>
+                <h1 className="centered-text">Exhibition & GLS</h1>
                  <div className="robot">
                      <img src={robot} alt="Robot" />
                  </div>
@@ -343,7 +344,7 @@ const GLS = () => {
                             key={index}
                             className="scroll-item"
                             style={{
-                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${spacedeckImage})`, 
+                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${exhibitionImage})`, 
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 minWidth: '100vw',
