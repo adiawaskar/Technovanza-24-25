@@ -333,42 +333,47 @@ const GLS = () => {
     ];
     //a.arun, aman dhattarwal, annu kapoor, dilip chhabria, gary kirsten, harpal singh, prithviraj chauhan, r chidambaram, s somnath, satish dua, suresh prabhu, vinod dham
     
+    const sponsors = [
+        {name: 'VJTI TBI', logo: require('../../components/Sponsors/sponsors/vjtitbi.jpeg')},
+        {name: 'The Parnika', logo: require('../../components/Sponsors/sponsors/parnika.jpeg')},
+        {name: 'Oxycool', logo: require('../../components/Sponsors/sponsors/oxycool.jpeg')},
+        {name: 'Krishna ', logo: require('../../components/Sponsors/sponsors/krishnadefense.jpeg')},
+    ]
+    // const pastSponsors = [
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/microsoft.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/ibm.png') },
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     
-    const pastSponsors = [
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/microsoft.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/ibm.png') },
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
+    //   const mediaSponsors = [
+    //     { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     
-      const mediaSponsors = [
-        { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
-    
-      const affiliatedSponsors = [
-        { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
+    //   const affiliatedSponsors = [
+    //     { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     return (
         <div className="gls-container">
             <SecondaryNavbar />
@@ -473,9 +478,10 @@ const GLS = () => {
             <div className="sponsors-container" style={{ backgroundImage: `url(${sponsorsBG})` }}>
         <h1 className="sponsors-heading">Sponsors</h1>
         <div className="sponsors-box">
-          {/*<Sponsors sponsors={pastSponsors} title="Past Sponsors" />
-          <Sponsors sponsors={mediaSponsors} title="Media Partners" />
-          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" />*/}
+          <Sponsors sponsors={sponsors} />
+          {/* <Sponsors sponsors={pastSponsors} title="Past Sponsors" /> */}
+          {/* <Sponsors sponsors={mediaSponsors} title="Media Partners" />
+          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" /> */}
         </div>
       </div>
         </div>

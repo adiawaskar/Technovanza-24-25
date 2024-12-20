@@ -159,8 +159,16 @@ const Events = () => {
       title: 'Ansys TechDay', 
       content: 'Workshop', 
       imageSrc: require('../../components/Assets/Events/ansys_workshop.jpeg'),
-      info: 'Step into the World of Multiphysics with Ansys! Ready to dive into cutting-edge simulation technologies? Join the Ansys Workshop and unlock a new perspective on innovation and research!' ,
+      info: 'Step into the World of Multiphysics with Ansys! Ready to dive into cutting-edge simulation technologies? Join the Ansys Workshop and unlock a new perspective on innovation and research! Don\'t miss this harmonious blend of culture and creativity!' ,
       register: 'https://unstop.com/o/awMx94S?lb=uImoFA8T&utm_medium=Share&utm_source=shortUrl'
+    },    
+    { 
+      id: 18, 
+      title: 'Geoshred', 
+      content: 'Workshop', 
+      imageSrc: require('../../components/Assets/Events/geoshred_workshop.jpeg'),
+      info: 'Discover the fusion of tradition and innovation! Technovanza 2025 presents a one-of-a-kind GeoShred Workshop, where Indian classical music meets cutting-edge technology. Immerse yourself in the mesmerizing iPad-based GeoShred performance and witness the future of music unfold.' ,
+      register: ''
     },    
   ];
 
