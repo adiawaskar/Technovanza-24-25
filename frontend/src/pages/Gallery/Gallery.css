@@ -2,7 +2,6 @@
 
 body.gallery-active {
     overflow-y: auto;
-    /* Enable scrolling */
 }
 .gallery_page {
     background-image: url('../../components/Assets/Gallery/background.jpg');
@@ -12,6 +11,11 @@ body.gallery-active {
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
 }
 
 .gallery_page {
@@ -19,8 +23,8 @@ body.gallery-active {
 }
 
 .gallery_heading {
-    text-align: center;
-    font-size: 8vw;
+text-align: center !important;
+    font-size: 7vw;
     font-family: 'Orbitron', sans-serif;
     color: #ffffff;
     /* text-shadow: 0 0 10px #00ffff; */
@@ -89,7 +93,6 @@ body.gallery-active {
                 0 0 6px rgba(255, 67, 67, 0.6),
                 0 0 9px rgba(202, 68, 255, 0.6),
                 0 0 12px rgba(49, 203, 255, 0.5);
-            /* Make shadow less intense for small screens */
         }
     .gallery_container {
         columns: 2;
@@ -104,7 +107,6 @@ body.gallery-active {
                 0 0 6px rgba(255, 67, 67, 0.6),
                 0 0 9px rgba(202, 68, 255, 0.6),
                 0 0 12px rgba(49, 203, 255, 0.5);
-            /* Make shadow less intense for small screens */
         }
     .gallery_container {
         columns: 1;

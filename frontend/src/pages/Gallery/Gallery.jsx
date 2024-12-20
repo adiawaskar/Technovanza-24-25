@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import "./Gallery.css";
 
-// Import all the images
 import image5 from "../../components/Assets/Gallery/image5.png";
 import image27 from "../../components/Assets/Gallery/image27.png";
 import image20 from "../../components/Assets/Gallery/image20.png";
@@ -13,7 +12,7 @@ import image6 from "../../components/Assets/Gallery/image6.png";
 import image7 from "../../components/Assets/Gallery/image7.png";
 import image8 from "../../components/Assets/Gallery/image8.png";
 import image9 from "../../components/Assets/Gallery/image9.png";
-import image10 from "../../components/Assets/Gallery/image10.png";
+// import image10 from "../../components/Assets/Gallery/image10.png";
 import image11 from "../../components/Assets/Gallery/image11.png";
 import image12 from "../../components/Assets/Gallery/image12.png";
 import image13 from "../../components/Assets/Gallery/image13.png";
@@ -41,29 +40,26 @@ import image37 from "../../components/Assets/Gallery/image37.png";
 import image38 from "../../components/Assets/Gallery/image38.png";
 import image39 from "../../components/Assets/Gallery/image39.png";
 import image40 from "../../components/Assets/Gallery/image40.png";
+import image41 from "../../components/Assets/Gallery/image41.jpg";
 import SecondaryNavbar from "../../components/SecondaryNavbar/SecondaryNavbar";
 
 const Gallery = () => {
 
   useEffect(() => {
-        // Add class to body when the component mounts
         document.body.classList.add('gallery-active');
-
-        // Remove the class when the component unmounts
         return () => {
             document.body.classList.remove('gallery-active');
         };
     }, []);
 
-  // Array of image imports
   const images = [
     image5, image27, image20, image2, image3, image4, image25, image6,
-    image7, image8, image9, image10, image11, image12, image13, image14,
+    image7, image8, image9, image11, image12, image13, image14,
     image15, image16, image17, image18, image19, image21, image22, image23,
     image24, image26, image29, image28, image33, image30, image31, image32,
-    image34, image35, image36, image37, image38, image39, image40,
+    image34, image35, image36, image37, image38, image39, image40, image41,
   ];
-
+  
    return (
     <div className="gallery_page">
       <SecondaryNavbar />
