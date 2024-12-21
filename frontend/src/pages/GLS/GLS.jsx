@@ -70,35 +70,53 @@ const GLS = () => {
             time: "10am - 5pm",
             venue: "VJTI Mumbai"
         },
+        {
+            title: "PiHU-1",
+            description: "Step into the future with PiHU-1! Unveiling groundbreaking innovations at Technovanza's Science and Tech Exhibition 2025! Features: Audio-visual interaction system, Telepresence, Biped walking, Sensory feedback system, Smart teachable machine",
+            imageUrl: require("../../components/Assets/GLS/pihu.jpeg"), 
+            buttonText: "Register",
+            date: "21st, 22nd, 23rd Dec 2024",
+            time: "10am - 5pm",
+            venue: "VJTI Mumbai"
+        },
     ];
 
     const upcomingGLS = [
         {
-            title: "Upcoming GLS Event 1",
-            description: "Prepare for an unforgettable event where industry leaders and innovators come together to share their insights and expertise. This session promises to ignite your curiosity, expand your knowledge, and inspire you to take on new challenges. Join us as we embark on a journey into the latest advancements and future possibilities!",
-            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), // Replace with actual image URL
+            title: "Shri A.S. Kiran Kumar",
+            description: "Dive into the stars and beyond! Shri A. S. Kiran Kumar, former ISRO Chairman, takes us through the marvels of India’s space program.",
+            imageUrl: require("../../components/Assets/GLS/askirankumar.jpeg"), // Replace with actual image URL
             buttonText: "Register",
-            date: "Soon to be announced",
-            time: "Soon to be announced",
-            venue: "Soon to be announced"
+            date: "21st December, 2024",
+            time: "11:00 AM",
+            venue: "VJTI, Mumbai"
         },
         {
-            title: "Upcoming GLS Event 2",
-            description: "Don’t miss out on this unique opportunity to hear from a visionary speaker as they share groundbreaking ideas and strategies that are reshaping the world. With a wealth of experience and a passion for innovation, our guest will provide valuable insights and guidance that can elevate your perspective and fuel your ambitions.",
-            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), // Replace with actual image URL
+            title: "Science Talk with Rajan Chopra & Abhishek Agrahari",
+            description: "Dive into the wonders of science! Technovanza's Science Talk brings you the dynamic duo—Rajan Chopra, a passionate Science Educator, and Abhishek Agrahari, an inspiring Science Communicator. From unraveling mysteries to sparking curiosity, this session is a must for all science enthusiasts!",
+            imageUrl: require("../../components/Assets/GLS/rajanabhishek.jpeg"), // Replace with actual image URL
             buttonText: "Register",
-             date: "Soon to be announced",
-            time: "Soon to be announced",
-            venue: "Soon to be announced"
+             date: "21st December, 2024",
+            time: "5:00 PM",
+            venue: "VJTI, Mumbai"
         },
         {
-            title: "Upcoming GLS Event 3",
-            description: "Step into the world of innovation and discovery as we welcome a prominent figure in technology and science. This session is designed to inspire and empower you with real-world knowledge and experiences that can help you make a difference. Get ready to be captivated by stories of success, resilience, and breakthrough achievements!",
-            imageUrl: require("../../components/Sponsors/sponsors/comingsoon.webp"), 
+            title: "Kuntal Joisher",
+            description: "Witness an awe-inspiring journey of determination! Join us as Kuntal Joisher, the first vegan to conquer Mount Everest, shares his incredible story of resilience and purpose.",
+            imageUrl: require("../../components/Assets/GLS/kuntaljoisher.jpeg"), 
             buttonText: "Register",
-             date: "Soon to be announced",
-            time: "Soon to be announced",
-            venue: "Soon to be announced"
+             date: "22nd December, 2024",
+            time: "3:00 PM",
+            venue: "VJTI, Mumbai"
+        },
+        {
+            title: "Satya Narayan Choudhary, IPS",
+            description: "Empowering Minds, Ensuring Safety! Join us for an insightful session with Satya Narayan Choudhary, IPS, Joint Commissioner of Police (L&O), Mumbai, as he delves into critical topics like cyber fraud awareness and women safety. Learn how to stay secure in an ever-evolving digital world.",
+            imageUrl: require("../../components/Assets/GLS/ipssatya.jpeg"), 
+            buttonText: "Register",
+             date: "23rd December, 2024",
+            time: "3:00 PM",
+            venue: "VJTI, Mumbai"
         },
     ];
     const pastLectures = [
@@ -315,42 +333,47 @@ const GLS = () => {
     ];
     //a.arun, aman dhattarwal, annu kapoor, dilip chhabria, gary kirsten, harpal singh, prithviraj chauhan, r chidambaram, s somnath, satish dua, suresh prabhu, vinod dham
     
+    const sponsors = [
+        {name: 'VJTI TBI', logo: require('../../components/Sponsors/sponsors/vjtitbi.jpeg')},
+        {name: 'The Parnika', logo: require('../../components/Sponsors/sponsors/parnika.jpeg')},
+        {name: 'Oxycool', logo: require('../../components/Sponsors/sponsors/oxycool.jpeg')},
+        {name: 'Krishna ', logo: require('../../components/Sponsors/sponsors/krishnadefense.jpeg')},
+    ]
+    // const pastSponsors = [
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/microsoft.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/ibm.png') },
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     
-    const pastSponsors = [
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/microsoft.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/ibm.png') },
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Sponsor C', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
+    //   const mediaSponsors = [
+    //     { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     
-      const mediaSponsors = [
-        { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Media Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
-    
-      const affiliatedSponsors = [
-        { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-        { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
-      ];
+    //   const affiliatedSponsors = [
+    //     { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor A', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //     { name: 'Affiliated Sponsor B', logo: require('../../components/Sponsors/sponsors/google.png') },
+    //   ];
     return (
         <div className="gls-container">
             <SecondaryNavbar />
@@ -455,9 +478,10 @@ const GLS = () => {
             <div className="sponsors-container" style={{ backgroundImage: `url(${sponsorsBG})` }}>
         <h1 className="sponsors-heading">Sponsors</h1>
         <div className="sponsors-box">
-          {/*<Sponsors sponsors={pastSponsors} title="Past Sponsors" />
-          <Sponsors sponsors={mediaSponsors} title="Media Partners" />
-          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" />*/}
+          <Sponsors sponsors={sponsors} />
+          {/* <Sponsors sponsors={pastSponsors} title="Past Sponsors" /> */}
+          {/* <Sponsors sponsors={mediaSponsors} title="Media Partners" />
+          <Sponsors sponsors={affiliatedSponsors} title="Affiliated Partners" /> */}
         </div>
       </div>
         </div>

@@ -11,14 +11,15 @@
   
   .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
   }
   
   .sponsor-card {
     padding: 10px;
-    max-height: 150px;
+    height: auto;
+    /* max-height: 150px; */
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s ease;
