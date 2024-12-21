@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
 body {
     overflow: hidden;
     height: 100vh;
@@ -119,13 +120,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     z-index: 1002;
 }
 
 landing-btn {
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 13.5px;
     color: #a3f7ff;
     background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
     border: 2px solid #064f64;
@@ -339,7 +340,8 @@ landing-btn:hover::after {
     font-weight: normal;
 }
 
-*/ .home-heading {
+*/
+.home-heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,7 +397,8 @@ landing-btn:hover::after {
 
 .about-container,
 .highlights-container,
-.theme-container {
+.theme-container,
+.schedule-container {
     display: flex;
     gap: 20px;
     overflow-y: auto;
@@ -414,13 +417,27 @@ landing-btn:hover::after {
     /* Adjust to control image size */
     max-width: 600px;
     /* Maximum width, can be adjusted */
-        height: auto;
-        /* Keeps the image's aspect ratio */
-        border-radius: 8px;
-        /* Similar to iframe styling */
-        object-fit: cover;
-        /* Ensures the image covers the container without stretching */
-    }
+    height: auto;
+    /* Keeps the image's aspect ratio */
+    border-radius: 8px;
+    /* Similar to iframe styling */
+    object-fit: cover;
+    /* Ensures the image covers the container without stretching */
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-container img {
+    width: 30%;
+    max-width: 400px;
+    height: 50%;
+    align-items: center;
+    object-fit: cover;
+}
 
 /* .about-text,
 .highlights-text,
@@ -435,12 +452,12 @@ landing-btn:hover::after {
     width: 50%;
     display: flex;
     font-family: 'Saira Stencil One', sans-serif;
-        font-size: 1.5rem;
-        /* Adjust the size as needed */
-        line-height: 1.6;
-        /* Improve readability */
-        /* text-transform: uppercase; */
-        /* Optional: gives a futuristic look */
+    font-size: 1.5rem;
+    /* Adjust the size as needed */
+    line-height: 1.6;
+    /* Improve readability */
+    /* text-transform: uppercase; */
+    /* Optional: gives a futuristic look */
 }
 
 .content-box:hover {
@@ -495,7 +512,7 @@ landing-btn:hover::after {
 .highlights-text p,
 .theme-text p {
     font-size: 13px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #e0e0e0;
     text-align: center;
@@ -515,7 +532,8 @@ landing-btn:hover::after {
 
 .about-text h2,
 .highlights-text h2,
-.theme-text h2 {
+.theme-text h2,
+.schedule h2 {
     font-size: 24px;
     color: #a3f7ff;
     text-align: center;
@@ -549,8 +567,8 @@ landing-btn:hover::after {
     background-color: #0d0d0d90;
     border-radius: 30%;
     bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 80vw;
     z-index: 1010;
 
@@ -588,36 +606,36 @@ landing-btn:hover::after {
         padding: 0;
     }
 
-        .about-container,
-        .highlights-container,
-        .theme-container {
-            display: flex;
-            flex-direction: column;
+    .about-container,
+    .highlights-container,
+    .theme-container {
+        display: flex;
+        flex-direction: column;
         overflow-y: auto;
         overflow-x: hidden;
-            /* height: calc(100vh - 50px); */
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-
-        .home-box {
-            width: 70vw;
-            gap: 10px;
+        /* height: calc(100vh - 50px); */
+        width: 100%;
+        box-sizing: border-box;
     }
 
-        .logo-wrapper {
-            top: -125px;
-            width: 320px;
-            height: 300px;
-            align-items: center;
-        }
 
-        #technovanza-logo {
-            width: 220px;
+    .home-box {
+        width: 70vw;
+        gap: 10px;
+    }
+
+    .logo-wrapper {
+        top: -125px;
+        width: 320px;
+        height: 300px;
+        align-items: center;
+    }
+
+    #technovanza-logo {
+        width: 220px;
         height: 200;
         /* Maintains aspect ratio */
-        }
+    }
 
     #cockpit-background {
         padding: 0;
@@ -629,29 +647,31 @@ landing-btn:hover::after {
         background-size: cover;
         overflow: hidden;
     }
- h1 {
-     float: left;
-     width: 80%;
-     text-align: center;
-     margin-top: 3rem;
- }
 
- .reminder {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 75%;
-     font-family: 'Orbitron', sans-serif;
-     font-size: 2vw;
-     position: fixed;
-     bottom: 75vh;
-     left: 50%;
-     transform: translateX(-50%);
-     z-index: 1010;
-     background-color: transparent;
-     border-radius: 30%;
- }
-        .left-frame,
+    h1 {
+        float: left;
+        width: 80%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .reminder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2vw;
+        position: fixed;
+        bottom: 75vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1010;
+        background-color: transparent;
+        border-radius: 30%;
+    }
+
+    .left-frame,
     .right-frame {
         display: none;
     }
@@ -659,21 +679,21 @@ landing-btn:hover::after {
     .home-heading {
         display: flex;
         justify-content: center;
-            align-items: center;
-            height: 50%;
-            width: 100%;
-            text-align: center;
-            background-image: url('./gangwolfik.webp');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            min-height: 250px;
-            /* Reduced for smaller screens */
-            margin-top: 80%;
-            /* Adjusted for better alignment */
-            animation: fadeInHeading 2s ease-in-out;
-            z-index: 10;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        background-image: url('./gangwolfik.webp');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 250px;
+        /* Reduced for smaller screens */
+        margin-top: 80%;
+        /* Adjusted for better alignment */
+        animation: fadeInHeading 2s ease-in-out;
+        z-index: 10;
     }
 
     .landing-btn1-container {
@@ -683,23 +703,23 @@ landing-btn:hover::after {
         gap: 5px;
     }
 
-        .landing-btn {
-            padding: 8px 16px;
+    .landing-btn {
+        padding: 8px 16px;
         font-size: 11px;
     }
 
     .bottom-nav {
         max-width: 90vw;
         gap: 8px;
-            bottom: 5%;
-            position: fixed;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* Semi-transparent background */
-            padding: 10px;
-            border-radius: 10px;
-        }
+        bottom: 5%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 10px;
+    }
 
-        .bottom-nav span {
+    .bottom-nav span {
         font-size: 13px;
         font-weight: 300;
     }
@@ -722,7 +742,7 @@ landing-btn:hover::after {
         color: #a3f7ff;
         padding: 8px 16px;
         font-size: 12px;
-            font-family: 'Orbitron', sans-serif;
+        font-family: 'Orbitron', sans-serif;
         border: 2px solid #064f64;
         border-radius: 6px;
         cursor: pointer;
@@ -740,18 +760,18 @@ landing-btn:hover::after {
         flex-direction: column;
         gap: 10px;
         /* margin-top: 10px; */
-            margin-bottom: 10px;
+        margin-bottom: 10px;
         background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
         padding: 15px;
         border: 2px solid #064f64;
         border-radius: 8px;
         position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            /* used to solve about scroll error */
-            z-index: 1006;
-            
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* used to solve about scroll error */
+        z-index: 1006;
+
     }
 
     .dropdown-menu.show {
@@ -759,7 +779,7 @@ landing-btn:hover::after {
     }
 
 
-        .content-box {
+    .content-box {
         width: 90%;
         max-width: 100%;
         height: 40%;
@@ -774,7 +794,7 @@ landing-btn:hover::after {
         /* used to sort about scroll error */
         z-index: 1005;
     }
-    
+
 
 
 
@@ -789,6 +809,7 @@ landing-btn:hover::after {
 
     }
 
+
     .about-text,
     .highlights-text,
     .theme-text {
@@ -799,4 +820,17 @@ landing-btn:hover::after {
 
     }
 
+    .schedule-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schedule-container img {
+        width: 30%;
+        max-width: 400px;
+        height: 50%;
+        align-items: center;
+        display: block;
+    }
 }

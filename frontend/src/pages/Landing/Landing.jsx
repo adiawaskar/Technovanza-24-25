@@ -63,6 +63,7 @@ const Landing = () => {
         document.getElementById('front')?.addEventListener('click', () => this._SetView('front', 'theme'));
         document.getElementById('right')?.addEventListener('click', () => this._SetView('right', 'location'));
         document.getElementById('up')?.addEventListener('click', () => this._SetView('up', 'home'));
+        document.getElementById('down')?.addEventListener('click', () => this._SetView('down', 'schedule'));
 
        
         this._SetView('up', 'home');
@@ -91,6 +92,7 @@ const Landing = () => {
         case 'left': this._SetView('left', 'highlights'); break;
         case 'front': this._SetView('front', 'theme'); break;
         case 'right': this._SetView('right', 'location'); break;
+        case 'down': this._SetView('down', 'Day 1 schedule'); break;
         default: console.warn(`No navigation handler for dropdown ID: ${id}`);
     }
 }
@@ -121,7 +123,7 @@ const Landing = () => {
           case 'front': this.targetPosition.set(0, 0, distance); break;
           case 'right': this.targetPosition.set(distance, 0, 0); break;
           case 'up': this.targetPosition.set(0, -distance, 0); break;
-          // case 'down': this.targetPosition.set(0, distance, 0); break;
+          case 'down': this.targetPosition.set(0, distance, 0); break;
         }
 
         const stars = document.getElementById('stars');
@@ -243,6 +245,7 @@ const Landing = () => {
         <landing-btn id="left">Highlights</landing-btn>
         <landing-btn id="front">Theme</landing-btn>
         <landing-btn id="right">Locate</landing-btn>
+        <landing-btn id="down">DAY 1 SCHEDULE</landing-btn>
     </div>  
     
     <div className="social-icons">
@@ -264,6 +267,7 @@ const Landing = () => {
                 <button id="left" className="landing-btn">Highlights</button>
                 <button id="front" className="landing-btn">Theme</button>
                 <button id="right" className="landing-btn">Locate</button>
+                <button id="down" className="landing-btn">Day 1 Schedule</button>
             </div>
   </div>
 
@@ -362,6 +366,18 @@ const Landing = () => {
 
         </iframe>
       </div>
+
+      <div id="schedule" className="content-box hidden">
+      <h2>Day 1 Schedule</h2>
+         <div className="schedule-container">
+         <img
+          src={require('./schedule1.jpg')} // Update this path
+          alt="Schedule"
+          className="schedule-image"
+        />
+        </div>
+      </div>
+
       
     </div>
   );
