@@ -165,7 +165,7 @@ const Events = () => {
     { 
       id: 18, 
       title: 'Geoshred', 
-      content: 'Workshop', 
+      content: 'Geoshred Workshop', 
       imageSrc: require('../../components/Assets/Events/geoshred_workshop.jpeg'),
       info: 'Discover the fusion of tradition and innovation! Technovanza 2025 presents a one-of-a-kind GeoShred Workshop, where Indian classical music meets cutting-edge technology. Immerse yourself in the mesmerizing iPad-based GeoShred performance and witness the future of music unfold.' ,
       register: ''
